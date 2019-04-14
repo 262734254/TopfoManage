@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C3DCFFD2-81A4-4969-9049-4CBF5978F3AD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tz888.SQLServerDAL</RootNamespace>
+    <AssemblyName>Tz888.SQLServerDAL</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountInfo.cs" />
+    <Compile Include="advertise\ADchannelInfoService.cs" />
+    <Compile Include="advertise\ADlaunchInfoService.cs" />
+    <Compile Include="advertise\ADMessageInfoDAL.cs" />
+    <Compile Include="advertise\AdvisitInfoService.cs" />
+    <Compile Include="Alliance\AuditMail.cs" />
+    <Compile Include="Alliance\ConsumeInfos.cs" />
+    <Compile Include="Alliance\ConsumeRepay.cs" />
+    <Compile Include="Alliance\Notice.cs" />
+    <Compile Include="Alliance\ResourcesNotice.cs" />
+    <Compile Include="Alliance\UserInfo.cs" />
+    <Compile Include="AreaImg.cs" />
+    <Compile Include="AreaText.cs" />
+    <Compile Include="AutoSendMsg.cs" />
+    <Compile Include="Brand\BrandDAL.cs" />
+    <Compile Include="BusinesProcess.cs" />
+    <Compile Include="Card.cs" />
+    <Compile Include="CarveOut\CarveOutInformationDAL.cs" />
+    <Compile Include="CaseInfoTabDAL.cs" />
+    <Compile Include="CatialManage\CatialInfoDAL.cs" />
+    <Compile Include="CollectionDAL.cs" />
+    <Compile Include="CommendDAL.cs" />
+    <Compile Include="Common.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\CommonFunction.cs" />
+    <Compile Include="Common\DictionaryInfoDAL.cs" />
+    <Compile Include="Common\IndustryDAL.cs" />
+    <Compile Include="Common\Induy.cs" />
+    <Compile Include="Common\InquiryDAL.cs" />
+    <Compile Include="Common\ParameterDAL.cs" />
+    <Compile Include="Common\SetCapitalDAL.cs" />
+    <Compile Include="Common\SetCurrencyDAL.cs" />
+    <Compile Include="Common\SetMerchantAttribute.cs" />
+    <Compile Include="Common\Text.cs" />
+    <Compile Include="Common\ZoneSelectDAL.cs" />
+    <Compile Include="Company\CompanyDAL.cs" />
+    <Compile Include="Company\CompanyMadeDAL.cs" />
+    <Compile Include="Company\CompanyShowDAL.cs" />
+    <Compile Include="Company\KeyWordsDal.cs" />
+    <Compile Include="CustomInfoDAL.cs" />
+    <Compile Include="dptopfo\AreaimgDAL.cs" />
+    <Compile Include="dptopfo\AreaIndexDAL.cs" />
+    <Compile Include="dptopfo\AreaTabDAL.cs" />
+    <Compile Include="dptopfo\Compage.cs" />
+    <Compile Include="dptopfo\Conn1.cs" />
+    <Compile Include="dptopfo\Conns.cs" />
+    <Compile Include="dptopfo\DBHelper.cs" />
+    <Compile Include="dptopfo\DBHelpers.cs" />
+    <Compile Include="dptopfo\EnvironmentImgDAL.cs" />
+    <Compile Include="dptopfo\EnvironmentTabDAL.cs" />
+    <Compile Include="dptopfo\EnvironmentTypeDAL.cs" />
+    <Compile Include="dptopfo\FriendLinkDAL.cs" />
+    <Compile Include="dptopfo\ImageTabMDAL.cs" />
+    <Compile Include="dptopfo\ImageUrlTabMDAL.cs" />
+    <Compile Include="dptopfo\Invest\InvestCostDAL.cs" />
+    <Compile Include="dptopfo\Invest\TzbigTypeDAL.cs" />
+    <Compile Include="dptopfo\Invest\TzchildTypDAL.cs" />
+    <Compile Include="dptopfo\Link\CommentDAL.cs" />
+    <Compile Include="dptopfo\Link\TZClickDAL.cs" />
+    <Compile Include="dptopfo\Link\TZLinkDAL.cs" />
+    <Compile Include="dptopfo\Menu\CompanyShow.cs" />
+    <Compile Include="dptopfo\Menu\EmployeeInfoTab.cs" />
+    <Compile Include="dptopfo\Menu\SysGroupTab.cs" />
+    <Compile Include="dptopfo\Menu\SysMenuTab.cs" />
+    <Compile Include="dptopfo\Menu\SysPermissionTab.cs" />
+    <Compile Include="dptopfo\Menu\SysRoleTab.cs" />
+    <Compile Include="dptopfo\Menu\System.cs" />
+    <Compile Include="dptopfo\Menu\SystemTemTabDAL.cs" />
+    <Compile Include="dptopfo\news\NewsTabDAL.cs" />
+    <Compile Include="dptopfo\news\NewsTypeTabDAL.cs" />
+    <Compile Include="dptopfo\news\NewsViewTabDAL.cs" />
+    <Compile Include="dptopfo\Park\ParkImgDAL.cs" />
+    <Compile Include="dptopfo\Park\ParkInfoDAL.cs" />
+    <Compile Include="dptopfo\Park\ParkTypeDal.cs" />
+    <Compile Include="dptopfo\policy\PolicyDAL.cs" />
+    <Compile Include="dptopfo\product\CommStatic.cs" />
+    <Compile Include="dptopfo\product\ProductDominDAL.cs" />
+    <Compile Include="dptopfo\product\ProductImgDAL.cs" />
+    <Compile Include="dptopfo\product\ProductTypeDAL.cs" />
+    <Compile Include="dptopfo\VideoSysDAL.cs" />
+    <Compile Include="dptopfo\VideoSysPagestaticDAL.cs" />
+    <Compile Include="dp\SysMenuTab.cs" />
+    <Compile Include="dp\SysPermissionTab.cs" />
+    <Compile Include="dp\SysRoleTab.cs" />
+    <Compile Include="dp\System.cs" />
+    <Compile Include="Email\EmailDAL.cs" />
+    <Compile Include="Enterprise.cs" />
+    <Compile Include="ErrorBase.cs" />
+    <Compile Include="ErrowTabDAL.cs" />
+    <Compile Include="Express\ExpressDAL.cs" />
+    <Compile Include="FenZhan\FenZhanDAL.cs" />
+    <Compile Include="Finance.cs" />
+    <Compile Include="FinancingManage\FinancingDAL.cs" />
+    <Compile Include="GoodFriend.cs" />
+    <Compile Include="Index_Edit.cs" />
+    <Compile Include="InfoStatic\InfoStaticQueueTab.cs" />
+    <Compile Include="InfoStatic\SetInfoPageStaticTab.cs" />
+    <Compile Include="Info\CapitalInfoAreaDAL.cs" />
+    <Compile Include="Info\CapitalInfoDAL.cs" />
+    <Compile Include="Conn.cs" />
+    <Compile Include="Info\IndexSelect.cs" />
+    <Compile Include="Info\InfoDefaultDEF.cs" />
+    <Compile Include="Info\InfoViewCollectionDAL.cs" />
+    <Compile Include="Info\Common.cs" />
+    <Compile Include="Info\InfoContactDAL.cs" />
+    <Compile Include="Info\InfoContactManDAL.cs" />
+    <Compile Include="Info\InfoResourceDAL.cs" />
+    <Compile Include="Info\MainInfoDAL.cs" />
+    <Compile Include="Info\MatchInfoDAL.cs" />
+    <Compile Include="Info\OpportunityInfoDAL.cs" />
+    <Compile Include="Info\ReleaseInfoDAL.cs" />
+    <Compile Include="Info\SetDefaultValue.cs" />
+    <Compile Include="Info\SetSubDefaultValue.cs" />
+    <Compile Include="Info\ShortInfoDAL.cs" />
+    <Compile Include="Info\V124\CapitalInfoDAL.cs" />
+    <Compile Include="Info\V124\MerchantZoneDAL.cs" />
+    <Compile Include="InnerInfo.cs" />
+    <Compile Include="Info\MarchantInfoDAL.cs" />
+    <Compile Include="Koubei\JoinKoubeiDAL.cs" />
+    <Compile Include="LeaveMsg.cs" />
+    <Compile Include="Link\LinkChannelType.cs" />
+    <Compile Include="Link\LinkInfoTab.cs" />
+    <Compile Include="Link\LinkTypeTab.cs" />
+    <Compile Include="LoanscontactsTab.cs" />
+    <Compile Include="loansInfo.cs" />
+    <Compile Include="loansInfoTab.cs" />
+    <Compile Include="Log.cs" />
+    <Compile Include="LoginInfoIMDAL.cs" />
+    <Compile Include="LoginInfo\Common.cs" />
+    <Compile Include="LoginInfo\LoginInfo.cs" />
+    <Compile Include="LoginInfo\Member.cs" />
+    <Compile Include="Mail\CityDAL.cs" />
+    <Compile Include="Mail\IndustryDAL.cs" />
+    <Compile Include="Mail\MailInfoDAL.cs" />
+    <Compile Include="Mail\MailLogDAL.cs" />
+    <Compile Include="Mail\MailTypeDAL.cs" />
+    <Compile Include="Mail\MialgroupDAL.cs" />
+    <Compile Include="Mail\PositionDAL.cs" />
+    <Compile Include="Mail\ProvinceDAL.cs" />
+    <Compile Include="Mail\SendMailDAL.cs" />
+    <Compile Include="Member\CompetenceTabDAL.cs" />
+    <Compile Include="Member\MenuTabDAL.cs" />
+    <Compile Include="Member\RoleGroupDAL.cs" />
+    <Compile Include="Member\RoleTabDAL.cs" />
+    <Compile Include="Manage\MenuPermissionDAL.cs" />
+    <Compile Include="Manage\PermissionDAL.cs" />
+    <Compile Include="MemberManageInfoDAL.cs" />
+    <Compile Include="MemberResourceDAL.cs" />
+    <Compile Include="MerchantManage\MarchantInfoDAL.cs" />
+    <Compile Include="MerchantOppor.cs" />
+    <Compile Include="MerchantSite.cs" />
+    <Compile Include="Model.cs" />
+    <Compile Include="MyHome\HomeLinkService.cs" />
+    <Compile Include="MyHome\HomeTypeService.cs" />
+    <Compile Include="news\NewsTabDAL.cs" />
+    <Compile Include="news\NewsTypeTabDAL.cs" />
+    <Compile Include="news\NewsViewTabDAL.cs" />
+    <Compile Include="offer\CapitalInfoService.cs" />
+    <Compile Include="OrderManage.cs" />
+    <Compile Include="Order\BusStrikeRecDAL.cs" />
+    <Compile Include="Order\IndustryReportDAL.cs" />
+    <Compile Include="Order\OrderLinkDAL.cs" />
+    <Compile Include="Order\OrderMainDAL.cs" />
+    <Compile Include="PageIniControlDAL.cs" />
+    <Compile Include="Pay.cs" />
+    <Compile Include="Info\ProjectInfoDAL.cs" />
+    <Compile Include="PayPwd.cs" />
+    <Compile Include="Pay1\ErrorBase.cs" />
+    <Compile Include="Pay1\PayOrder.cs" />
+    <Compile Include="Permission.cs" />
+    <Compile Include="Person\PersonDAL.cs" />
+    <Compile Include="Picture\PictureDAL.cs" />
+    <Compile Include="PleaseMoneyDal\PleaseMoney.cs" />
+    <Compile Include="ProfessionalManage\ProfessionalinfoDAL.cs" />
+    <Compile Include="ProfessionalManage\ProfessionalLinkDAL.cs" />
+    <Compile Include="ProfessionalManage\ProfessionalPleaseDAL.cs" />
+    <Compile Include="ProfessionalManage\ProfessionaltalentsDAL.cs" />
+    <Compile Include="ProfessionalManage\ProfessionalTypeDAL.cs" />
+    <Compile Include="ProfessionalManage\ProfessionalviewDAL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recommend\RecommendDAL.cs" />
+    <Compile Include="Recomm\recommResourceDAL.cs" />
+    <Compile Include="Register\common.cs" />
+    <Compile Include="Register\EnterpriseRegister.cs" />
+    <Compile Include="Register\GovernmentRegister.cs" />
+    <Compile Include="Register\LoginfoDAL.cs" />
+    <Compile Include="Register\MemberInfoDAL.cs" />
+    <Compile Include="Register\SEOLoginTabDAL.cs" />
+    <Compile Include="Register\SS_Agency_Services.cs" />
+    <Compile Include="Register\SS_ProfessionalServices.cs" />
+    <Compile Include="Register\VIPMemberRegister.cs" />
+    <Compile Include="ReportTabDAL.cs" />
+    <Compile Include="report\IndustryFromDAL.cs" />
+    <Compile Include="report\reportTabDAL.cs" />
+    <Compile Include="report\reportViewDAL.cs" />
+    <Compile Include="Resource\ResourceDAL.cs" />
+    <Compile Include="SearchStatic\SearchStatic.cs" />
+    <Compile Include="Search\SearchInfoDAL.cs" />
+    <Compile Include="SendNotice.cs" />
+    <Compile Include="ServiesType.cs" />
+    <Compile Include="StrikeOrder.cs" />
+    <Compile Include="SubscribeSet.cs" />
+    <Compile Include="Sys\EmployeeInfoTab.cs" />
+    <Compile Include="Sys\SysRoleTab.cs" />
+    <Compile Include="Sys\SysGroupTab.cs" />
+    <Compile Include="Sys\SysMenuTab.cs" />
+    <Compile Include="Sys\SysPermissionTab.cs" />
+    <Compile Include="Sys\System.cs" />
+    <Compile Include="TFZS\Common.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TFZS\ExpressTargetDAL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TFZS\MainTargetDAL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TFZS\MeasureStandardDAL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TFZS\TFZS_ProjectDetaiSubDAL.cs" />
+    <Compile Include="TPMerchant.cs" />
+    <Compile Include="TPPicture.cs" />
+    <Compile Include="TPVideo.cs" />
+    <Compile Include="TradeShow\TradeShowDAL.cs" />
+    <Compile Include="Union.cs" />
+    <Compile Include="UserInfoH.cs" />
+    <Compile Include="UserParameters.cs" />
+    <Compile Include="Video\VideoDAL.cs" />
+    <Compile Include="VipMsg.cs" />
+    <Compile Include="Visit\VisitInfoDAL.cs" />
+    <Compile Include="VoucherConvert.cs" />
+    <Compile Include="WebUnion\WebUnion_UserInfo.cs" />
+    <Compile Include="wyzs\ContactDAL.cs" />
+    <Compile Include="wyzs\MainInfoDAL.cs" />
+    <Compile Include="wyzs\WyzsTabDAL.cs" />
+    <Compile Include="wyzs\WyzsTypeDAL.cs" />
+    <Compile Include="zstft\zstftDAL.cs" />
+    <Compile Include="zsWebsite\zsWebsiteDAL.cs" />
+    <Compile Include="zx\NewsTableService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tz888.DBUtility\Tz888.DBUtility.csproj">
+      <Project>{EE61DF29-35DB-408D-ACF8-1AC2E0A13090}</Project>
+      <Name>Tz888.DBUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tz888.IDAL\Tz888.IDAL.csproj">
+      <Project>{8EC654D9-ACA8-47E2-B201-59781959A5CD}</Project>
+      <Name>Tz888.IDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tz888.Model\Tz888.Model.csproj">
+      <Project>{059992ED-C5FF-4E37-A3F1-BC4FA6854304}</Project>
+      <Name>Tz888.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

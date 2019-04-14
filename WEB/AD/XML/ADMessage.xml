@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AD>
+  <data>
+    <adM>
+      <adid>S1</adid>
+      <Message>
+        <urladdress>http://www.topfo.com/</urladdress>
+        <date>2010-8-4</date>
+        <imgsize>365*232</imgsize>
+        <User>AD</User>
+      </Message>
+    </adM>
+
+    <adM>
+      <adid>S2</adid>
+      <Message>
+        <urladdress>http://www.topfo.com/</urladdress>
+        <date>2010-8-4</date>
+        <imgsize>365*232</imgsize>
+        <User>AD2</User>
+      </Message>
+    </adM>
+
+
+    <adM>
+      <adid>S3</adid>
+      <Message>
+        <urladdress>http://www.topfo.com/</urladdress>
+        <date>2010-8-4</date>
+        <imgsize>365*232</imgsize>
+        <User>AD3</User>
+      </Message>
+    </adM>
+
+
+    <adM>
+      <adid>S4</adid>
+      <Message>
+        <urladdress>http://www.topfo.com/</urladdress>
+        <date>2010-8-4</date>
+        <imgsize>365*232</imgsize>
+        <User>AD4</User>
+      </Message>
+    </adM>
+  </data>
+  
+</AD>

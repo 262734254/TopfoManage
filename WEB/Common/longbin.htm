@@ -1,0 +1,176 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=gb2312" />
+    <link href="http://dp.topfo.com/css/XHcommon.css" rel="stylesheet" type="text/css" />
+
+    <script language="javascript" type="text/javascript" src="http://dp.topfo.com/js/jquery.js"></script>
+
+    <title>资源联盟</title>
+    <style type="text/css">
+.floot {width:960px;margin:30px auto 0 auto;clear:both;overflow:hidden;font-size: 12px;}
+.copy {height:100px; text-align:center; line-height:21px; padding-top:10px;}
+.public {height:20px; border-bottom:1px solid #ccc; text-align:center;}
+</style>
+
+    <script language="javascript" type="text/javascript">
+        var xmlHttp;
+        function createXMLHTTP()
+        {
+           //alert("ok1");
+            if(window.XMLHttpRequest)
+            {
+                xmlHttp=new XMLHttpRequest();//mozilla浏览器
+
+            }
+            else if(window.ActiveXObject)
+            {
+                try
+                {
+                    xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");//IE老版本
+
+                }
+                catch(e)
+                {}
+                try
+                {
+                    xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");//IE新版本
+
+                }
+                catch(e)
+                {}
+                if(!xmlHttp)
+                {
+                    window.alert("不能创建XMLHttpRequest对象实例！");
+                    return false;
+                }
+            }
+        }
+            function CheckName(MuneName)
+            {
+                createXMLHTTP();//创建XMLHttpRequest对象
+                var url="http://z.topfo.com/AajxStr.aspx?MuneName="+escape(MuneName);
+                //以POST形式局部请求服务器
+                xmlHttp.open("POST",url,true);
+                //关联一个事件
+
+                xmlHttp.onreadystatechange=MethodcheckUserName;//定义发送请求后事件关联回传方法(类似于按钮的单击事件)
+                xmlHttp.send(null);
+            }
+         function MethodcheckUserName()
+          {
+             if(xmlHttp.readyState==4)//判断对象状态
+
+            {
+                if(xmlHttp.status==200)//信息成功返回，开始处理信息
+
+                { 
+                    if(xmlHttp.responseText!=""){
+                        document.getElementById("right").innerHTML=xmlHttp.responseText;
+                    }else if(xmlHttp.responseText=="false"){
+                        //菜单名不存在
+                        document.getElementById("right").innerHTML="<font color='green' size='-1'>菜单名可用</font>";
+                    }else{
+                        //访问出错
+                          document.getElementById("right").innerHTML="获取信息出错";
+                    }
+                }
+            }
+    }
+ window.onload=function()
+ { 
+ var cnName=document.getElementById("loginNameId").innerHTML;
+ CheckName(cnName);
+//Projects();
+//setTimeout("Project()",600);
+
+ }
+    </script>
+
+</head>
+<body>
+    <div id="loginNameId" style="display: none;">
+        longbin</div>
+    <div id="header">
+        <h1>
+            资源联盟</h1>
+        <p id="top_right">
+            <a href="http://www.topfo.com/" class="a1">拓富首页</a> <a href="#" class="a2">联系我们</a>
+            <a href="#" class="a3">在线留言</a></p>
+    </div>
+    <div id="nav">
+        <ul>
+            <li><a href="#" class="t1">首页</a></li>
+            <li><a href="#">融资项目</a></li>
+            <li><a href="#">投资项目</a></li>
+            <li><a href="#">招商项目</a></li>
+            <li><a href="#">专业服务</a></li>
+            <li><a href="#">推荐项目</a></li>
+        </ul>
+    </div>
+    <div id="main">
+        <div id="banner">
+            <a href="#">
+                <img src="http://dp.topfo.com/images/main.jpg" width="971" height="320" /></a><div
+                    id="diy">
+                    <h2>
+                        个人格言</h2>
+                    <p>
+                        <span id="lblNature">世界上最宽阔的是海洋,比海洋更宽阔的天空,比天空更宽阔的是男人的心,比男人的心更宽阔的是......</span>
+                    </p>
+                </div>
+        </div>
+    </div>
+    <!--内容部分!-->
+    <div id="content">
+        <div id="left">
+            <div id="left_a">
+                <h2>
+                    个人介绍</h2>
+                <img id="imgPerson" src="http://dp.topfo.com/img/longbin/2011816162136921.jpg" style="height: 106px;
+                    width: 155px; border-width: 0px;" />
+                <p>
+                    <b><span id="lblMesasage">longbin&nbsp;2011年08月16日出生&nbsp;深圳南山区a</span></b></p>
+                <p>
+                    <span id="lblDesc">由于获得“与人无求，与世无争，包容万物，自强不息。”的处世哲学，所以无为，无求，无争，既没有得，也没有失，没有痛苦，没有苦恼，永远保持一个好的心情。1984年山西省人民政府授予晋科（83）062二等奖，晋科（83）242四等奖。1989年授予化工工程师资格证书。“人工配制的人乳及其制备方法”发明专利，20106月......</span></p>
+                <p class="more">
+                    <a href="#">more</a></p>
+            </div>
+            <div id="left_b">
+                <div id="imgLoding" style="display: block; text-align: center;">
+                    <img src="http://www.topfo.com/Web13/images/down.gif" alt="Loading" />数据加载中.......
+                </div>
+            </div>
+            <div id="left_c">
+                <div class="l1">
+                    <h4>
+                        在线留言</h4>
+                    <a href="#">提交</a> <a href="#">取消</a>
+                </div>
+                <div class="l2">
+                    <p class="text1">
+                        留言昵称：<input name="" type="text" />
+                        电子邮箱：<input name="" type="text" /></p>
+                    <p class="text2">
+                        留言内容：<textarea name="" cols="" rows=""></textarea></p>
+                </div>
+            </div>
+        </div>
+        <div id="right">
+            <div id="imgLodings" style="display: block; text-align: center;">
+                <img src="http://www.topfo.com/Web13/images/down.gif" alt="Loading" />数据加载中.......
+            </div>
+        </div>
+    </div>
+    <!--Floot Part-->
+    <div class="floot">
+
+        <script type="text/javascript" src="http://img2.topfo.com/js/foot.js"></script>
+
+        <div style="display: none">
+
+            <script src="http://s16.cnzz.com/stat.php?id=2629166&web_id=2629166&show=pic" language="JavaScript"></script>
+
+        </div>
+    </div>
+</body>
+</html>

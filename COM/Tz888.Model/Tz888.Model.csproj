@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{059992ED-C5FF-4E37-A3F1-BC4FA6854304}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tz888.Model</RootNamespace>
+    <AssemblyName>Tz888.Model</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="advertise\ADchannelInfo.cs" />
+    <Compile Include="advertise\ADlaunchInfo.cs" />
+    <Compile Include="advertise\ADMessageInfo.cs" />
+    <Compile Include="advertise\ADTypeInfo.cs" />
+    <Compile Include="advertise\AdvisitInfo.cs" />
+    <Compile Include="Advertorial\IndustryTypeModel.cs" />
+    <Compile Include="Alliance\ConsumeInfos.cs" />
+    <Compile Include="Alliance\ConsumeRepay.cs" />
+    <Compile Include="Alliance\Notice.cs" />
+    <Compile Include="Alliance\ResourcesNotice.cs" />
+    <Compile Include="Alliance\UserInfo.cs" />
+    <Compile Include="AreaText.cs" />
+    <Compile Include="Brand\BrandModel.cs" />
+    <Compile Include="BusinesProcess.cs" />
+    <Compile Include="BuySms.cs" />
+    <Compile Include="Card.cs" />
+    <Compile Include="Carveout\CarveOutInfoTabModel.cs" />
+    <Compile Include="CasesInfoTab.cs" />
+    <Compile Include="CatialManage\CatialModel.cs" />
+    <Compile Include="CollectionModel.cs" />
+    <Compile Include="Commend.cs" />
+    <Compile Include="Common\DictionaryInfoModel.cs" />
+    <Compile Include="Common\Industry.cs" />
+    <Compile Include="Common\IndustryModel.cs" />
+    <Compile Include="Common\InquiryModel.cs" />
+    <Compile Include="Company\CompanyMadeModel.cs" />
+    <Compile Include="Company\CompanyModel.cs" />
+    <Compile Include="Company\CompanyShow.cs" />
+    <Compile Include="Company\KeyWords.cs" />
+    <Compile Include="Company\NarrowModel.cs" />
+    <Compile Include="CustomInfoModel.cs" />
+    <Compile Include="dptopfo\AreaimgM.cs" />
+    <Compile Include="dptopfo\AreaTabM.cs" />
+    <Compile Include="dptopfo\EnvironmentImgM.cs" />
+    <Compile Include="dptopfo\EnvironmentTabM.cs" />
+    <Compile Include="dptopfo\EnvironmentTypeM.cs" />
+    <Compile Include="dptopfo\FriendLink.cs" />
+    <Compile Include="dptopfo\ImageModel.cs" />
+    <Compile Include="dptopfo\ImageTabM.cs" />
+    <Compile Include="dptopfo\ImageUrlTabM.cs" />
+    <Compile Include="dptopfo\Invest\InvestCostM.cs" />
+    <Compile Include="dptopfo\Invest\TzbigTypeM.cs" />
+    <Compile Include="dptopfo\Invest\TzchildTypeM.cs" />
+    <Compile Include="dptopfo\Link\CommentM.cs" />
+    <Compile Include="dptopfo\Link\TZClickM.cs" />
+    <Compile Include="dptopfo\Link\TZLinkM.cs" />
+    <Compile Include="dptopfo\Menu\CompanyShow.cs" />
+    <Compile Include="dptopfo\Menu\EmployeeInfoTab.cs" />
+    <Compile Include="dptopfo\Menu\SysGroupTab.cs" />
+    <Compile Include="dptopfo\Menu\SysMenuTab.cs" />
+    <Compile Include="dptopfo\Menu\SysPermissionTab.cs" />
+    <Compile Include="dptopfo\Menu\SysRoleTab.cs" />
+    <Compile Include="dptopfo\Menu\System.cs" />
+    <Compile Include="dptopfo\Menu\SystemTemTabM.cs" />
+    <Compile Include="dptopfo\news\NewsTab.cs" />
+    <Compile Include="dptopfo\news\NewsTypeTab.cs" />
+    <Compile Include="dptopfo\news\NewsViewTab.cs" />
+    <Compile Include="dptopfo\news\UpImages.cs" />
+    <Compile Include="dptopfo\Park\ParkImgM.cs" />
+    <Compile Include="dptopfo\Park\ParkInfoM.cs" />
+    <Compile Include="dptopfo\Park\ParkTypeM.cs" />
+    <Compile Include="dptopfo\policy\PolicyModel.cs" />
+    <Compile Include="dptopfo\Product\ProductDominM.cs" />
+    <Compile Include="dptopfo\Product\ProductImgM.cs" />
+    <Compile Include="dptopfo\Product\ProductTypeM.cs" />
+    <Compile Include="dptopfo\VideoSysM.cs" />
+    <Compile Include="dp\SysMenuTab.cs" />
+    <Compile Include="dp\SysPermissionTab.cs" />
+    <Compile Include="dp\SysRoleTab.cs" />
+    <Compile Include="dp\System.cs" />
+    <Compile Include="Email\EmailAnnexModel.cs" />
+    <Compile Include="Email\EmailLogModel.cs" />
+    <Compile Include="Email\EmailModel.cs" />
+    <Compile Include="Email\EmailUserModel.cs" />
+    <Compile Include="Enterprise.cs" />
+    <Compile Include="ErrowTabModel.cs" />
+    <Compile Include="Express\ExpressModel.cs" />
+    <Compile Include="FenZhan\FenZhanModel.cs" />
+    <Compile Include="GoodFriend.cs" />
+    <Compile Include="Government.cs" />
+    <Compile Include="Index_Edit.cs" />
+    <Compile Include="InfoStatic\InfoStaticQueueTab.cs" />
+    <Compile Include="InfoStatic\SetInfoPageStaticTab.cs" />
+    <Compile Include="Info\CapitalInfoAreaModel.cs" />
+    <Compile Include="Info\CapitalInfoModel.cs" />
+    <Compile Include="Info\CapitalSetModel.cs" />
+    <Compile Include="Info\CooperationDemandTypeModel.cs" />
+    <Compile Include="Info\InfoAuditModel.cs" />
+    <Compile Include="Info\InfoContactManModel.cs" />
+    <Compile Include="Info\InfoContactModel.cs" />
+    <Compile Include="Info\InfoDefaultDEFModel.cs" />
+    <Compile Include="Info\InfoResourceModel.cs" />
+    <Compile Include="Info\MainInfoModel.cs" />
+    <Compile Include="Info\MerchantAttributeModel.cs" />
+    <Compile Include="Info\MerchantInfoModel.cs" />
+    <Compile Include="Info\MerchantSetModel.cs" />
+    <Compile Include="Info\OpportunityInfoModel.cs" />
+    <Compile Include="Info\ProjectAddressInfoModel.cs" />
+    <Compile Include="Info\ProjectInfoModel.cs" />
+    <Compile Include="Info\ProjectSetModel.cs" />
+    <Compile Include="Info\DefaultValueModel.cs" />
+    <Compile Include="Info\ResourcesModel.cs" />
+    <Compile Include="Info\ShortInfoModel.cs" />
+    <Compile Include="Info\SubDefaultValueModel.cs" />
+    <Compile Include="Info\V124\CapitalInfoModel.cs" />
+    <Compile Include="Info\V124\CapitalSetModel.cs" />
+    <Compile Include="Info\V124\MerchantZoneModel.cs" />
+    <Compile Include="InnerInfo.cs" />
+    <Compile Include="InnerInfoReceived.cs" />
+    <Compile Include="InnerInfoSend.cs" />
+    <Compile Include="InnerInfoWaster.cs" />
+    <Compile Include="Koubei\JoinKoubeiModel.cs" />
+    <Compile Include="LeaveMsg.cs" />
+    <Compile Include="Link\LinkChannelType.cs" />
+    <Compile Include="Link\LinkInfoTab.cs" />
+    <Compile Include="Link\LinkTypeTab.cs" />
+    <Compile Include="LoanscontactsTab.cs" />
+    <Compile Include="LoansInfo.cs" />
+    <Compile Include="LoansInfoTab.cs" />
+    <Compile Include="LoginInfo.cs" />
+    <Compile Include="LoginInfoIMModel.cs" />
+    <Compile Include="LogModel.cs" />
+    <Compile Include="Mail\City.cs" />
+    <Compile Include="Mail\Industry.cs" />
+    <Compile Include="Mail\MailInfo.cs" />
+    <Compile Include="Mail\MailLog.cs" />
+    <Compile Include="Mail\MailType.cs" />
+    <Compile Include="Mail\Mialgroup.cs" />
+    <Compile Include="Mail\Position.cs" />
+    <Compile Include="Mail\Province.cs" />
+    <Compile Include="Mail\SendMail.cs" />
+    <Compile Include="Member\MenuTabModel.cs" />
+    <Compile Include="Member\RoleGroupTab.cs" />
+    <Compile Include="Member\RoleTab.cs" />
+    <Compile Include="Manage\Permission.cs" />
+    <Compile Include="MemberManageInfo.cs" />
+    <Compile Include="MemberResourceModel.cs" />
+    <Compile Include="MerchantManage\MerchantModel.cs" />
+    <Compile Include="MerchantSite.cs" />
+    <Compile Include="Model.cs" />
+    <Compile Include="MyHome\HomeLink.cs" />
+    <Compile Include="MyHome\HomeType.cs" />
+    <Compile Include="news\NewsTab.cs" />
+    <Compile Include="news\NewsTypeTab.cs" />
+    <Compile Include="news\NewsViewTab.cs" />
+    <Compile Include="news\UpImages.cs" />
+    <Compile Include="offer\CapitalInfoModel.cs" />
+    <Compile Include="Order.cs" />
+    <Compile Include="Order\BusStrikeRecTab.cs" />
+    <Compile Include="Order\IndustryReport.cs" />
+    <Compile Include="Order\OrderLink.cs" />
+    <Compile Include="Order\OrderMain.cs" />
+    <Compile Include="Pay.cs" />
+    <Compile Include="PayPwd.cs" />
+    <Compile Include="Permission.cs" />
+    <Compile Include="Person\PersonM.cs" />
+    <Compile Include="Picture\PictureInfo.cs" />
+    <Compile Include="PleaseMoneyModel\PleaseMoneyModel.cs" />
+    <Compile Include="ProfessionalManage\ProfessionalinfoTab.cs" />
+    <Compile Include="ProfessionalManage\ProfessionalLink.cs" />
+    <Compile Include="ProfessionalManage\ProfessionalPlease.cs" />
+    <Compile Include="ProfessionalManage\Professionaltalents.cs" />
+    <Compile Include="ProfessionalManage\ProfessionalTypeTbl.cs" />
+    <Compile Include="ProfessionalManage\Professionalview.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recommend\RecommendModel.cs" />
+    <Compile Include="Recomm\recommResourceM.cs" />
+    <Compile Include="Register\EnterpriseInfoModel.cs" />
+    <Compile Include="Register\GovernmentInfoModel.cs" />
+    <Compile Include="Register\SEOLoginTabModel.cs" />
+    <Compile Include="Register\SetVIPPriceModel.cs" />
+    <Compile Include="Register\LoginInfoModel.cs" />
+    <Compile Include="Register\MemberInfoModel.cs" />
+    <Compile Include="Register\MemberResourceTab.cs" />
+    <Compile Include="Register\OrgAuditModel.cs" />
+    <Compile Include="Register\OrgContactManModel.cs" />
+    <Compile Include="Register\OrgContactModel.cs" />
+    <Compile Include="Register\SS_Agency_Services.cs" />
+    <Compile Include="Register\SS_ProfessionalServices.cs" />
+    <Compile Include="Register\VIPMemberRegister.cs" />
+    <Compile Include="report\IndustryFrom.cs" />
+    <Compile Include="report\ReportTab.cs" />
+    <Compile Include="report\ReportView.cs" />
+    <Compile Include="Resource\Resource.cs" />
+    <Compile Include="Search\KeywordForMember.cs" />
+    <Compile Include="Search\SearchInfo.cs" />
+    <Compile Include="Search\SearchKeyword.cs" />
+    <Compile Include="SendMsg\MobileMsg.cs" />
+    <Compile Include="SS_ProfessionalServicesModel.cs" />
+    <Compile Include="StrikeOrder.cs" />
+    <Compile Include="subjectInfoNewTab.cs" />
+    <Compile Include="Subject\ExtendAddressModel.cs" />
+    <Compile Include="Subject\SubjectExtendModel.cs" />
+    <Compile Include="Subject\SubjectRecordModel.cs" />
+    <Compile Include="SubscribeGetSet.cs" />
+    <Compile Include="SubscribeSet.cs" />
+    <Compile Include="SubscribeSetTabLog.cs" />
+    <Compile Include="Sys\EmployeeInfoTab.cs" />
+    <Compile Include="Sys\SysGroupTab.cs" />
+    <Compile Include="Sys\SysMenuTab.cs" />
+    <Compile Include="Sys\SysPermissionTab.cs" />
+    <Compile Include="Sys\SysRoleTab.cs" />
+    <Compile Include="Sys\System.cs" />
+    <Compile Include="TFZS\TFZS_ExpressTarget.cs" />
+    <Compile Include="TFZS\TFZS_MainTarget.cs" />
+    <Compile Include="TFZS\TFZS_MeasureStandard.cs" />
+    <Compile Include="TFZS\TFZS_ProjectDetaiSubModel.cs" />
+    <Compile Include="TFZS_ExpressTarget.cs" />
+    <Compile Include="TFZS_MainTarget.cs" />
+    <Compile Include="TFZS_MeasureStandard.cs" />
+    <Compile Include="TPMerchant.cs" />
+    <Compile Include="TPPicture.cs" />
+    <Compile Include="TPVideo.cs" />
+    <Compile Include="TradeShow\TradeShowModel.cs" />
+    <Compile Include="UserInfoZ.cs" />
+    <Compile Include="UserParameters.cs" />
+    <Compile Include="Video\VideoInfo.cs" />
+    <Compile Include="VIPMemberRegister.cs" />
+    <Compile Include="VipMsg.cs" />
+    <Compile Include="Visit\VisitInfoModel.cs" />
+    <Compile Include="WebUnion\WebUnion_UserInfo.cs" />
+    <Compile Include="wyzs\DetailTab.cs" />
+    <Compile Include="wyzs\MainInfoTab.cs" />
+    <Compile Include="wyzs\WyzsModel.cs" />
+    <Compile Include="wyzs\WyzsType.cs" />
+    <Compile Include="zstft\zstftModel.cs" />
+    <Compile Include="zsWebsite\zsWebsiteModel.cs" />
+    <Compile Include="zx\NewsTabModel.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

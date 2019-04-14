@@ -1,0 +1,21 @@
+﻿<%@ WebHandler Language="C#" Class="LinkMan" %>
+
+using System;
+using System.Web;
+
+public class LinkMan : IHttpHandler {
+    Tz888.BLL.PageBLL page = new Tz888.BLL.PageBLL();
+    public void ProcessRequest (HttpContext context) {
+        context.Response.ContentType = "text/plain";
+        int infoId = Convert.ToInt32(context.Request["InfoID"].ToString());
+        string name = page.SelLinkMan(infoId);
+        context.Response.Write(name);
+    }
+ 
+    public bool IsReusable {
+        get {
+            return false;
+        }
+    }
+
+}

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AD>
+  <code>1</code>
+  <data>
+  <file>
+    <channel>S</channel>
+    <adfile>
+      <address>http://www.topfo.com/xml/AD.XML</address>
+      <dates>2010-08-09</dates>
+      <UserName>admin</UserName>
+    </adfile>   
+  </file>
+    <file>
+      <channel>Z</channel>
+      <adfile>
+        <address>http://www.topfo.com/xml/AD.XML</address>
+        <dates>2010-08-09</dates>
+        <UserName>admin</UserName>
+      </adfile>
+    </file>
+  </data>
+</AD>

@@ -1,0 +1,292 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+<title>成功案例-中国招商投资网</title>
+<meta name="keywords" content="招商，投资" />
+<meta name="description" content="中国招商投资网" />
+<link href="../css/common.css" rel="stylesheet" type="text/css" />
+<link href="../css/cgal.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script language="javascript" type="text/javascript" src=" http://chat.7k35.com/chat/7k35_1.jsp?eprId=topfo"></script>
+
+<script language="javascript" type="text/javascript">
+function Hand()
+{
+   var infoID=document.getElementById("DivinfoID").innerHTML;
+   $.ajax({type:"post",url:"http://news.topfo.com/CGAl/Handler.ashx",data:"InfoID="+infoID,success:function(msg) 
+   { 
+   document.getElementById("HitID").innerHTML=msg;
+   }
+   }); 
+}
+
+function Login()
+{
+alert("sssssss");
+   $.ajax({type:"post",url:"../../WebsiteLogin.aspx",success:function(msg) 
+   { 
+   alert(msg);
+   if(msg==1)
+   {
+   document.getElementById("sLogin").style.display="block";
+   }
+   else
+   {
+   document.getElementById("sLogin").style.display="none";
+   }
+   }
+   }); 
+}
+function getCookie()//读取cookies函数        
+{  
+    var loginnameStr="";
+    var ckdataStr="";
+    
+    if(document.cookie!=""&&document.cookie.indexOf(";")!=-1)
+    {   
+        var cookies = document.cookie.split(';');
+        for(var i=0;i<cookies.length;i++)
+        {//alert(cookies[i]);
+            var co = cookies[i];
+            if(co.indexOf("topfo.com")!=-1)
+            {
+                if(co.indexOf("topfo.com.LoginName")!=-1)
+                {
+                    loginnameStr=co.split('=')[1];
+                }
+                if(co.indexOf("topfo.com_CKData")!=-1)
+                {
+                    ckdataStr=co.split('=')[1];
+                }
+            } 
+        }
+    }
+    if(loginnameStr =="" || loginnameStr ==null)
+    {
+        loginnameStr = ckdataStr;
+    }
+    //alert(loginnameStr);
+    //alert(ckdataStr);
+    if(loginnameStr!=null&&loginnameStr!="")
+    {
+        document.getElementById("divLogin").innerHTML =" <span class='name' style='height:20px;line-height:20px;text-indent:10px;'>尊敬的用户会员 " + loginnameStr + ",您已经登陆..</span><span class='ser' style='height:20px;line-height:20px;'><a href='http://member.topfo.com/Publish/publishNavigate.aspx' target='_blank'>[进入拓富中心]</a>&nbsp;&nbsp;<a href='http://member.topfo.com/Logout.aspx' target='_self'>[退出]</a></span>";
+       
+        
+    }
+}
+   var str ="";
+    var messageIndex = 0;
+    window.onload = function()
+    {
+       
+        getCookie();
+        //消息提示框
+         var loginnameStr="";
+        var ckdataStr="";
+    
+        if(document.cookie!=""&&document.cookie.indexOf(";")!=-1)
+        {   
+            var cookies = document.cookie.split(';');
+            for(var i=0;i<cookies.length;i++)
+            {//alert(cookies[i]);
+                var co = cookies[i];
+                if(co.indexOf("topfo.com")!=-1)
+                {
+                    if(co.indexOf("topfo.com.LoginName")!=-1)
+                    {
+                        loginnameStr=co.split('=')[1];
+                    }
+                    if(co.indexOf("topfo.com_CKData")!=-1)
+                    {
+                        ckdataStr=co.split('=')[1];
+                    }
+                } 
+            }
+        }
+        if(loginnameStr =="" || loginnameStr ==null)
+        {
+            loginnameStr = ckdataStr;
+        }
+        if(loginnameStr !="")
+        {
+            setInterval("getStrHTML()",15000);
+        }
+    }
+function CheckLogin_mini()
+{  
+	if (document.getElementById("txtLoginName").value.length ==0)
+	{
+		alert("请输入用户名!");
+		document.getElementById("txtLoginName").focus();
+		return;
+	}
+	if(document.getElementById("txtPassword").value.length ==0)
+	{
+		alert("请输入密码!");
+		document.getElementById("txtPassword").focus();
+		return;
+	}
+	else
+	{	
+var actionUrl ="http://member.topfo.com/LoginR.aspx?";
+		//if(document.getElementById('isAutoLogin').checked)
+			actionUrl +='isAuto=False&';
+		actionUrl += 'url='+window.location.href;
+		
+		document.forms["form_mini"].action = actionUrl;
+		document.forms["form_mini"].submit();
+	}
+}
+</script>
+</head>
+
+<body>
+<!--鼠标触发JS-->
+<script type="text/javascript" src="../js/trigger.js"></script>
+<!--Head Part-->
+<div class="head">
+	<div class="head_l"><a href="#"><img src="../img/logo.gif" alt="中国招商投资网"></a></div>
+	<div class="head_r">
+		<div class="head_r_l f_gray">
+		  <div id="divLogin" class="login_02" style="float: left;">
+                <form id="form_mini" method="post" target="_self" action="" defaultbutton="btLogin">
+                    <div style="float: left;">
+                        用户名
+                        <input id="txtLoginName" name="txtLoginName" type="text" class="inp1"" />
+                        密码:
+                        <input id="txtPassword" name="txtPassword" type="password" class="inp1" maxlength="20" />
+           <select name="select" class="sel1">
+          <option>选择您的去向</option>
+          <option>拓富会员中心</option>
+          <option>资源联盟</option>
+          <option>分站中心</option>
+		</select>
+                    </div>
+                    <div style="float: left; padding-left: 8px;">
+                        <input id="btLogin" name="" type="submit" class="btn1" onclick="CheckLogin_mini();return false;"
+                            value="登录" />
+                    </div>
+                </form>
+            </div>
+	  </div>
+		<div class="head_r_r"><a href="http://member.topfo.com/Register/Register.aspx">注册</a>　<a href="http://member.topfo.com/Login.aspx">登录</a>　<a href="http://mail.tz888.cn/">邮箱</a>　<a onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.investguide.cn/');"  href="#">快捷桌面</a>　<a onclick="jiayingOpenMyWin();" style="cursor: pointer">在线客服</a>　<a href="http://english.topfo.com/">English</a></div>
+		<div class="clear"></div>
+		<div class="head_menu f_14 f_black strong">
+			<a href="http://rz.topfo.com/" target="_blank">融资</a>
+			<a href="http://tz.topfo.com/" target="_blank">投资</a>
+			<a href="http://zs.topfo.com/" target="_blank">政府招商</a>
+			<a href="http://zycs.topfo.com/" target="_blank">资源超市</a>
+			<a href="http://www.topfo.com/CarveOut/" target="_blank">创业</a>
+			<a href="http://www.topfo.com/news/" target="_blank">资讯</a>
+			<a href="http://www.topfo.com/agent/" target="_blank">拓富分站</a>
+			<a href="http://union.topfo.com/" target="_blank" class="last">专业服务</a>
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>
+<!--Head Ad-->
+<div align="center">
+<iframe style="width:960px;height:110px; " src="http://news.topfo.com/iframe/ImgIfrom.html" frameborder="0" scrolling="no"></iframe>
+</div>
+<!--Head Name-->
+<div class="head_cha">
+	<div class="head_cha_l"><a href="#"><img src="../img/head_cha_cgal.gif" alt="成功案例频道"></a></div>
+	<div class="head_cha_m f_gray"><script type="text/javascript" src="http://img2.topfo.com/js/Hot_zs_gundong.js"></script></div>
+	<div class="clear"></div>
+</div>
+<!--Head Menu-->
+<div class="head_nav">
+	<div class="head_nav_l f_14 f_black">
+		<a href="http://news.topfo.com/CGAl/index.html" target="_blank">首页</a>
+		<a href="#" >政府招商案例</a>
+		<a href="#" >投资案例</a>
+		<a href="#" style="background:none;">融资案例</a>
+	</div>
+	<div class="head_nav_r"></div>
+	<div class="clear"></div>
+</div>
+
+<div class="con_nav">
+	<div class="l">您所在的位置：<a href="http://news.topfo.com/CGAl/index.html" target="_blank">首页</a>&nbsp;&gt;&nbsp;<a href="#">成功案例</a>&nbsp;&gt;&nbsp;<a href="#">其它案例</a>&nbsp;&gt;&nbsp;正文</div>
+</div>
+
+<!--主体部分-->
+<div class="con" style="background:url(../img/topfo5_cgal_bg2.gif);">
+<!--Left-->
+<div class="con_l">
+	<div class="con3">
+		<div class="con3_tit">
+			<h2>注册海外公司</h2>
+		  <hr size="1" noshade="noshade">
+		  中国招商投资网　2010-12-8 15:54:33　<a target='_blank' href='http://member.topfo.com/helper/CollectingInfo.aspx?infoid=2396644'>收藏本页</a> 访问人数<span style="color:Red" id="HitID"></span>
+		</div>
+		<div class="con3_text f_14">
+   一、成立香港公司的好处 <BR>1、公司名称选择自由，公司名称允许含有学院、出版社、协会、国际、集团、控股、实业等字眼；<BR>2、公司经营范围极少限制，例如：金融、财务、进出口、医药、文化出版、信息网络、贸易、船务等都可以成为我们的业务；<BR>3、香港公司允许无业务，允许空壳公司存在。成立香港空壳公司却变成了有力的广告宣传； <BR>4、香港公司无须验资，注册资本任意提高，但到位资金不限，为我们成立国际集团公司奠定了基础；<BR>5、香港公司可作为辆企业对外的窗口公司，容易取得国外企业的信任与合作；<BR>6、以香港公司和内地公司合资或合办来料加工厂，在内地享有各种政策优惠；<BR>7、香港税率低、税种少；不赢利，不交税，利用香港低税率和税务计划达到合理税务；<BR>8、可透过电子银行服务遥控在香港银行开立的往来，储蓄，外币，信用证户口；<BR>9、利用香港外汇进出的便利，直接接收与开立信用证，避免汇率差损失；<BR>10、香港政府对中小企业在财政上有实质上的支助。我们可以利用中港公司的有利条件在海外进行融资，再利用这笔资金在内地发展业务或在香港牧业和股票市场进行投资获利；<BR>11、香港是全世界最自由和繁荣的商贸港口，基础设施良好，为营商者提供了有利环境；<BR>12、利用香港知名度，创立香港品牌，提升公司国际形象；<BR>13、只要您的公司在香港交税，到美国设立分公司易如反掌，在美国有公司、就有移民的机会；<BR>14、香港公司可以输入中国专才，发展国际高新技术的业务；<BR>15、利用公司名义在港置业投资，进行楼宇按揭买卖，证明券金融投资；<BR>16、以香港公司名义在香港当地申请您在国内市场创立的商标，品牌助您迅速创立驰名商标，并抢先占领国际市场.<BR>二、成立香港公司的条件 <BR>1、 1位或1位以上年满18岁的股东；<BR>2、 所有股东必须出示有效身份证或中国护照影印件；<BR>3、 注册资本不少于10000元港币（到位资金不限）；<BR>4、 在香港能提供注册地址（一般由我们提供）； <BR>三、办理香港公司的程序 <BR>（一、）须提供资料： <BR>1. 提供全新公司名--查名--15分钟出结果<BR>2. 提供股东身份证或护照复印件（至少1个，年满18岁，任何国籍，关系都可以）<BR>3. 注册资本（不用验资，如注册资金超过1万元以外按政府收取0.1%厘印税即国内印花税）例如：10万元付100元厘印税 100万元 付1000元厘印税<BR>4. 股东的股份分配5. 国内的联系地址及电话注：如股东超出3个以外，第四位每位股东收200元文件手续费 <BR>（二、）办理过程(以上资料到位后要办理以下手续)： <BR>1. 签订委托合同<BR>2. 收取办理费用订金<BR>3. 将资料传到我公司由我公司根据资料出文件，再速递到香港办理 4. 提供以上资料我方在15个工作日完成新公司，将为客户提供以下资料： <BR>(1) 政府文件（R1，R2，D1，D2，D3商业登记证B1，R1公司注册证书C1）<BR>(2) 新公司印章3个( 1个钢印，1个原子改错章，1个原子印签名章(银行支票盖章用)<BR>(3) 公司组织大纲章程<BR>(4) 一本内部股票本<BR>(5) 一本法定股东、董事会议记录册（绿色硬皮部）<BR>(6) 一个绿色硬盒（存放上述文件及物品之用） <BR>（三、）公司组合：董事股东最少1个（任何国籍人士均可）1位秘书（必须是香港或香港注册之有限公司） <BR>（四、）公司秘书: 必须由本公司出任秘书职责：提供法定职务，公司法委意见及会计税务建议 <BR>联系一：<BR>电话：0769-22489551 <BR>传真：0769-23030960 <BR>地址：东莞市莞太大道美佳大厦B509 <BR>联系二：<BR>电话：0769-22489715 <BR>传真：0769-22489702 <BR>地址：东莞市东城大道东顺楼二楼 <BR>
+		</div>
+		<div class="con3_btm"><div id="DivinfoID" style="display:none">2396644</div>【<a href="#" onclick="Login();" >查看联系人</a>】 【<a href="Javascript:window.print();">打印</a>】【<a target='_blank' href='http://member.topfo.com/helper/CollectingInfo.aspx?infoid=2396644'>收藏本页</a>】【<a href="javascript:self.close()" >关闭本页</a>】</div>
+		<div style="display:none" id="sLogin">
+		联系人：xz
+		</div>
+	</div>
+</div>
+<script language="javascript" type="text/javascript">Hand();Login();</script>
+
+<!--Right-->	
+<div class="con_r">
+	<!--政府招商服务中心-->
+	<div class="con3_col">
+		<div class="l f_14 strong">政府招商服务中心</div>
+		<div class="r"><a href="http://www.heromet.com/MerchantServices.shtml">&gt;&gt;更多</a></div>
+		<div class="clear"></div>
+	</div>
+	<div class="con3_sub">
+		<a href="http://www.heromet.com/MerchantServices.shtml#a1" target="_blank">标的式招商</a> | <a href="http://www.heromet.com/MerchantServices.shtml#a4" target="_blank">产业规划及产业招商</a><br>
+		<a href="http://www.heromet.com/MerchantServices.shtml#a3" target="_blank">龙头企业引进</a> | <a href="http://www.heromet.com/MerchantServices.shtml#a5" target="_blank">高效招商活动支持</a><br>
+		<a href="http://www.heromet.com/MerchantServices.shtml#a6" target="_blank">区域投资环境评测 </a>
+	</div>
+	<div class="con_mar"></div>
+	<div class="con_ad1"><iframe name="ifr" style="width:260px;height:90px; padding:0; margin:0" src="http://news.topfo.com/iframe/SmallPic.html" frameborder="0" scrolling="no"  ></iframe></div>
+	<div class="con_mar"></div>
+	<!--投资服务中心-->
+	<div class="con3_col">
+		<div class="l f_14 strong">投资服务中心</div>
+		<div class="r"><a href="http://www.heromet.com/CapitalServices.shtml">&gt;&gt;更多</a></div>
+		<div class="clear"></div>
+	</div>
+	<div class="con3_sub">
+		<a href="http://www.heromet.com/CapitalServices.shtml#a4" target="_blank">投资委托</a> | <a href="http://www.heromet.com/CapitalServices.shtml#a1" target="_blank">投资咨询</a> | <a href="http://www.heromet.com/CapitalServices.shtml#a2" target="_blank">投资专业支持</a><br>
+		<a href="http://www.heromet.com/CapitalServices.shtml#a3" target="_blank">项目推荐</a> | <a href="http://www.heromet.com/CapitalServices.shtml#a6" target="_blank">引导投资</a> | <a href="http://www.heromet.com/CapitalServices.shtml#a7" target="_blank">投资理财</a><br>
+	</div>
+	<div class="con_mar"></div>
+	<!--融资服务中心-->
+	<div class="con3_col">
+		<div class="l f_14 strong">融资服务中心</div>
+		<div class="r"><a href="http://www.heromet.com/projectServices.shtml">&gt;&gt;更多</a></div>
+		<div class="clear"></div>
+	</div>
+	<div class="con3_sub">
+		<a href="http://www.heromet.com/projectServices.shtml#a1" target="_blank">标的式融资委托</a> | <a href="http://www.heromet.com/projectServices.shtml#a2" target="_blank">融资专业指导</a><br>
+		<a href="http://www.heromet.com/projectServices.shtml#a3" target="_blank">融资系统方案提供及运作</a>
+	</div>
+	
+</div>
+<div class="clear"></div>
+</div>
+<div class="con_line2"></div>
+
+<!--Floot Part-->
+
+ <div class="floot">
+	<div class="public"><a href="http://www.topfo.com/aboutus/index.shtml">关于我们</a>　-　<a href="http://www.topfo.com/ContactUs.shtml">联系我们</a>　-　<a href="http://www.topfo.com/Aboutus/ServiceOnline/index.shtml">我们的服务</a>　-　<a href="http://www.topfo.com/ADbusiness/ad/ad_pay.htm">支付方式</a>　-　<a href="http://www.topfo.com/ADbusiness/ad/ad_first.htm">广告服务</a>　-　<a href="http://www.topfo.com/ServiceItem/ServiceItem.shtml">服务条款</a>　-　<a href="http://www.topfo.com/Map.shtml">网站地图</a>　-　<a href="http://www.topfo.com/zhaoping/index.shtml">诚聘英才</a>　-　<a href="http://www.topfo.com/Sys/Message.aspx">留言反馈</a>　-　<a href="http://www.topfo.com/link/">友情链接</a></div>
+	<div class="copy">
+		Copyright &copy; 1998-2010 <a href="http://www.topfo.com/">www.investguide.cn</a> All Rights Reserved<br>
+		拓富网络：<a href="http://www.topfo.com/">中国招商投资网</a> <a href="http://english.topfo.com/">英文站</a> <a href="#">专业服务网</a> <a href="http://www.topfo.com/">拓富排行榜</a> <a href="http://www.heromet.com/">贤泽投资</a>　支持合作：联合国工业发发展组织中国投资促进会 唯一授权合作网站<br>
+		经营许可证编号：<a href="http://www.miibeian.gov.cn/">粤B2-20040428</a>  ICP编号：粤B2-19981001<br>
+		客服热线:0755-82210116 <script src="http://s16.cnzz.com/stat.php?id=2629166&web_id=2629166&show=pic" language="JavaScript"></script>
+
+	</div>
+</div>
+</body>
+</html>

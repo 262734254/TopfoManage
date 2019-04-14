@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://dp.topfo.com/WebServices/TemplateUpdate.asmx?wsdl" docRef="http://dp.topfo.com/WebServices/TemplateUpdate.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://dp.topfo.com/WebServices/TemplateUpdate.asmx" xmlns:q1="http://tempuri.org/" binding="q1:TemplateUpdateSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://dp.topfo.com/WebServices/TemplateUpdate.asmx" xmlns:q2="http://tempuri.org/" binding="q2:TemplateUpdateSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

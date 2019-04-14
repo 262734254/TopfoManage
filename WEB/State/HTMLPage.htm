@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>hello</title>
+</head>
+<script >
+
+/* 以下代码支持使层可以拖动***********Begin******************/
+ 
+   function $(_sId){return document.getElementById(_sId);}
+   
+   function moveStart (event, _sId)
+   {
+    var oObj = $(_sId);
+     
+    oObj.onmousemove = mousemove;
+    oObj.onmouseup = mouseup;
+    oObj.setCapture ? oObj.setCapture() : function(){};
+    oEvent = window.event ? window.event : event;
+    var dragData = {x : oEvent.clientX, y : oEvent.clientY};
+    var backData = {x : parseInt(oObj.style.top), y : parseInt(oObj.style.left) 
+            };
+   
+   function mousemove()
+   { 
+     var oEvent = window.event ? window.event : event;
+     var iLeft = oEvent.clientX - dragData["x"] + parseInt(oObj.style.left);
+     var iTop = oEvent.clientY - dragData["y"] + parseInt(oObj.style.top);
+     oObj.style.left = iLeft;
+     oObj.style.top = iTop;
+     dragData = {x: oEvent.clientX, y: oEvent.clientY};   
+   }
+   
+   function mouseup()
+   {    
+          
+     var oEvent = window.event ? window.event : event;
+     oObj.onmousemove = null;
+      oObj.onmouseup = null;
+     
+     if(oEvent.clientX < 1 || oEvent.clientY < 1 || oEvent.clientX > document.body.clientWidth || oEvent.clientY > document.body.clientHeight)
+     {
+      oObj.style.left = backData.y;
+      oObj.style.top = backData.x;
+          }
+        oObj.releaseCapture ? oObj.releaseCapture() : function(){ document.getElementById('div1').contentEditable = true;};
+   }
+  } 
+  
+/* 以上代码支持使层可以拖动***********End******************/  
+
+  function onDataChanged(obj)
+  { 
+       var objParent =  obj.parentNode;
+      var childElement = objParent.firstChild; 
+     childElement.value = obj.innerText ;
+    
+     if(event.keyCode == 13)
+       {      
+         var txtobj=document.selection.createRange();
+  txtobj.text==""?txtobj.text="\n":(document.selection.clear())&(txtobj.text="\n"); //三目复合表达式,解决有被选文字时回车的光标定位问题 
+  document.selection.createRange().select(); 
+  return false ; 
+      }
+
+  }
+</script>
+<body onload="onDataChanged(document.getElementById('div1'));">
+
+<div name="divTextAreaContainer" id="divTextAreaContainer" style="position:absolute;border:0px solid #C0C0C0;width:552px;left:0px;top:0px;"  onmousedown="moveStart(event,'divTextAreaContainer')"   > 
+<input type="hidden" name="hidden@id@" id="hidden@id@" value="" />
+<div id="div1" style="border:1px solid #C0C0C0;WORD-BREAK: break-all; WORD-WRAP: break-word;overflow:scroll;height:357px;width:552px; top:20px;left:100px"    
+ onclick="this.contentEditable= true;"  onkeyup="onDataChanged(this)">hello 
+</div> 
+</div> 
+</body>
+
+</html>

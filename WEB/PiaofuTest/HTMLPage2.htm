@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//Dtd XHTML 1.0 transitional//EN" "http://www.w3.org/tr/xhtml1/Dtd/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+
+<link rel="stylesheet" type="text/css" href="css/css.css">
+<title>左侧可折叠在线客户代码</title>
+</head>
+
+<body>
+
+<div id="xixi" onmouseover="toBig()" onmouseout="toSmall()">
+<table style="FLOAT: left" border=0 cellSpacing=0 cellPadding=0 width=157>
+  <body>
+  <tr>
+    <td class=main_head height=39 vAlign=top>&nbsp;</td></tr>
+  <tr>
+    <td class=info vAlign=top>
+      <table class=qqtable border=0 cellSpacing=0 cellPadding=0 width=120 
+      align=center>
+        <body>
+        <tr>
+          <td align=middle><a href="http://www.lanrentuku.com/" target="_blank"><IMG border=0 
+            src="images/kefu_head.gif"></a> </td>
+        </tr>
+        <tr>
+          <td height=5></td></tr>
+        <tr>
+          <td height=30 align=middle><span>QQ:123456</span></td></tr>
+        <tr>
+          <td height=30 align=middle><span>QQ:456464</span></td></tr>
+        <tr>
+          <td height=5></td></tr>
+        <tr>
+          <td vAlign=top align=middle style="height: 35px"><A href="http://www.lanrentuku.com/" target="_blank"><IMG border=0 src="images/img3-5-btn1.gif" width=90 height=25></A></td>
+        </tr>
+        <tr>
+          <td height=38 vAlign=top align=middle><A href="http://www.lanrentuku.com/" target="_blank"><IMG border=0 src="images/img3-5-btn2.gif" width=90 height=25></A></td>
+        </tr>
+        <tr>
+          <td align=middle>
+            <div class=qun><FONT 
+            color=#9b9b9b>交流群</FONT><BR><span>456456</span></div></td></tr>
+        <tr>
+          <td align=middle>
+            <div class=qun><FONT 
+            color=#9b9b9b>交流群</FONT><BR><span>456456564</span></div></td></tr>
+        <tr>
+          <td align=middle>&nbsp;</td></tr></body></table></td></tr>
+  <tr>
+    <td class=down_kefu vAlign=top></td></tr></body></table>
+<div class=Obtn></div></div>
+<script language="javascript" type="text/jscript">
+		xx=function (id,_top,_left){
+		var me=id.charAt?document.getElementById(id):id, d1=document.body, d2=document.documentElement;
+		d1.style.height=d2.style.height='100%';me.style.top=_top?_top+'px':0;me.style.left=_left+"px";//[(_left>0?'left':'left')]=_left?Math.abs(_left)+'px':0;
+		me.style.position='absolute';
+		setInterval(function (){me.style.top=parseInt(me.style.top)+(Math.max(d1.scrollTop,d2.scrollTop)+_top-parseInt(me.style.top))*0.1+'px';},10+parseInt(Math.random()*20));
+		return arguments.callee;
+		};
+		window.onload=function (){
+		xx
+		('xixi',100,-152)
+		}
+	</script>
+
+<script language="javascript" type="text/jscript">
+			lastScrollY=0; 
+			
+			var InterTime = 1;
+			var maxWidth=-1;
+			var minWidth=-152;
+			var numInter = 8;
+			
+			var BigInter ;
+			var SmallInter ;
+			
+			var o =  document.getElementById("xixi");
+				var i = parseInt(o.style.left);
+				function Big()
+				{
+					if(parseInt(o.style.left)<maxWidth)
+					{
+						i = parseInt(o.style.left);
+						i += numInter;	
+						o.style.left=i+"px";	
+						if(i==maxWidth)
+							clearInterval(BigInter);
+					}
+				}
+				function toBig()
+				{
+					clearInterval(SmallInter);
+					clearInterval(BigInter);
+						BigInter = setInterval(Big,InterTime);
+				}
+				function Small()
+				{
+					if(parseInt(o.style.left)>minWidth)
+					{
+						i = parseInt(o.style.left);
+						i -= numInter;
+						o.style.left=i+"px";
+						
+						if(i==minWidth)
+							clearInterval(SmallInter);
+					}
+				}
+				function toSmall()
+				{
+					clearInterval(SmallInter);
+					clearInterval(BigInter);
+					SmallInter = setInterval(Small,InterTime);
+					
+				}
+				
+</script>
+</body>
+</html>

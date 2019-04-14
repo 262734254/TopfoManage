@@ -1,0 +1,15 @@
+C:\Documents and Settings\Administrator\桌面\备份文件\TopfoManage\COM\Tz888.Model\bin\Debug\Tz888.Model.dll
+C:\Documents and Settings\Administrator\桌面\备份文件\TopfoManage\COM\Tz888.Model\bin\Debug\Tz888.Model.pdb
+C:\Documents and Settings\Administrator\桌面\备份文件\TopfoManage\COM\Tz888.Model\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\备份文件\TopfoManage\COM\Tz888.Model\obj\Debug\Tz888.Model.dll
+C:\Documents and Settings\Administrator\桌面\备份文件\TopfoManage\COM\Tz888.Model\obj\Debug\Tz888.Model.pdb
+E:\MyWork\TopfoManage\COM\Tz888.Model\bin\Release\Tz888.Model.dll
+E:\MyWork\TopfoManage\COM\Tz888.Model\bin\Release\Tz888.Model.pdb
+E:\MyWork\TopfoManage\COM\Tz888.Model\obj\Release\ResolveAssemblyReference.cache
+E:\MyWork\TopfoManage\COM\Tz888.Model\obj\Release\Tz888.Model.dll
+E:\MyWork\TopfoManage\COM\Tz888.Model\obj\Release\Tz888.Model.pdb
+E:\MyWork\TopfoManage\COM\Tz888.Model\bin\Debug\Tz888.Model.dll
+E:\MyWork\TopfoManage\COM\Tz888.Model\bin\Debug\Tz888.Model.pdb
+E:\MyWork\TopfoManage\COM\Tz888.Model\obj\Debug\ResolveAssemblyReference.cache
+E:\MyWork\TopfoManage\COM\Tz888.Model\obj\Debug\Tz888.Model.dll
+E:\MyWork\TopfoManage\COM\Tz888.Model\obj\Debug\Tz888.Model.pdb

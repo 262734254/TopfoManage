@@ -1,0 +1,39 @@
+C:\Documents and Settings\Administrator\桌面\备份文件\TopfoManage\COM\Tz888.Pager\bin\Debug\Tz888.Pager.dll
+C:\Documents and Settings\Administrator\桌面\备份文件\TopfoManage\COM\Tz888.Pager\bin\Debug\Tz888.Pager.pdb
+C:\Documents and Settings\Administrator\桌面\备份文件\TopfoManage\COM\Tz888.Pager\bin\Debug\en\Tz888.Pager.resources.dll
+C:\Documents and Settings\Administrator\桌面\备份文件\TopfoManage\COM\Tz888.Pager\bin\Debug\zh-CHT\Tz888.Pager.resources.dll
+C:\Documents and Settings\Administrator\桌面\备份文件\TopfoManage\COM\Tz888.Pager\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\备份文件\TopfoManage\COM\Tz888.Pager\obj\Debug\Tz888.Pager.AspNetPager.resources
+C:\Documents and Settings\Administrator\桌面\备份文件\TopfoManage\COM\Tz888.Pager\obj\Debug\Tz888.Pager.csproj.GenerateResource.Cache
+C:\Documents and Settings\Administrator\桌面\备份文件\TopfoManage\COM\Tz888.Pager\obj\Debug\Tz888.Pager.AspNetPager.en.resources
+C:\Documents and Settings\Administrator\桌面\备份文件\TopfoManage\COM\Tz888.Pager\obj\Debug\Tz888.Pager.AspNetPager.zh-CHT.resources
+C:\Documents and Settings\Administrator\桌面\备份文件\TopfoManage\COM\Tz888.Pager\obj\Debug\en\Tz888.Pager.resources.dll
+C:\Documents and Settings\Administrator\桌面\备份文件\TopfoManage\COM\Tz888.Pager\obj\Debug\zh-CHT\Tz888.Pager.resources.dll
+C:\Documents and Settings\Administrator\桌面\备份文件\TopfoManage\COM\Tz888.Pager\obj\Debug\Tz888.Pager.dll
+C:\Documents and Settings\Administrator\桌面\备份文件\TopfoManage\COM\Tz888.Pager\obj\Debug\Tz888.Pager.pdb
+E:\MyWork\TopfoManage\COM\Tz888.Pager\bin\Release\Tz888.Pager.dll
+E:\MyWork\TopfoManage\COM\Tz888.Pager\bin\Release\Tz888.Pager.pdb
+E:\MyWork\TopfoManage\COM\Tz888.Pager\bin\Release\en\Tz888.Pager.resources.dll
+E:\MyWork\TopfoManage\COM\Tz888.Pager\bin\Release\zh-CHT\Tz888.Pager.resources.dll
+E:\MyWork\TopfoManage\COM\Tz888.Pager\obj\Release\ResolveAssemblyReference.cache
+E:\MyWork\TopfoManage\COM\Tz888.Pager\obj\Release\Tz888.Pager.AspNetPager.resources
+E:\MyWork\TopfoManage\COM\Tz888.Pager\obj\Release\Tz888.Pager.csproj.GenerateResource.Cache
+E:\MyWork\TopfoManage\COM\Tz888.Pager\obj\Release\Tz888.Pager.AspNetPager.en.resources
+E:\MyWork\TopfoManage\COM\Tz888.Pager\obj\Release\Tz888.Pager.AspNetPager.zh-CHT.resources
+E:\MyWork\TopfoManage\COM\Tz888.Pager\obj\Release\en\Tz888.Pager.resources.dll
+E:\MyWork\TopfoManage\COM\Tz888.Pager\obj\Release\zh-CHT\Tz888.Pager.resources.dll
+E:\MyWork\TopfoManage\COM\Tz888.Pager\obj\Release\Tz888.Pager.dll
+E:\MyWork\TopfoManage\COM\Tz888.Pager\obj\Release\Tz888.Pager.pdb
+E:\MyWork\TopfoManage\COM\Tz888.Pager\bin\Debug\Tz888.Pager.dll
+E:\MyWork\TopfoManage\COM\Tz888.Pager\bin\Debug\Tz888.Pager.pdb
+E:\MyWork\TopfoManage\COM\Tz888.Pager\bin\Debug\en\Tz888.Pager.resources.dll
+E:\MyWork\TopfoManage\COM\Tz888.Pager\bin\Debug\zh-CHT\Tz888.Pager.resources.dll
+E:\MyWork\TopfoManage\COM\Tz888.Pager\obj\Debug\ResolveAssemblyReference.cache
+E:\MyWork\TopfoManage\COM\Tz888.Pager\obj\Debug\Tz888.Pager.AspNetPager.resources
+E:\MyWork\TopfoManage\COM\Tz888.Pager\obj\Debug\Tz888.Pager.csproj.GenerateResource.Cache
+E:\MyWork\TopfoManage\COM\Tz888.Pager\obj\Debug\Tz888.Pager.AspNetPager.en.resources
+E:\MyWork\TopfoManage\COM\Tz888.Pager\obj\Debug\Tz888.Pager.AspNetPager.zh-CHT.resources
+E:\MyWork\TopfoManage\COM\Tz888.Pager\obj\Debug\en\Tz888.Pager.resources.dll
+E:\MyWork\TopfoManage\COM\Tz888.Pager\obj\Debug\zh-CHT\Tz888.Pager.resources.dll
+E:\MyWork\TopfoManage\COM\Tz888.Pager\obj\Debug\Tz888.Pager.dll
+E:\MyWork\TopfoManage\COM\Tz888.Pager\obj\Debug\Tz888.Pager.pdb

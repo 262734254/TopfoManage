@@ -1,0 +1,53 @@
+﻿/*政府招商 */
+.con {width:960px; padding:0; margin:0 auto; background:url(../img/topfo5_cgal_bg.gif); clear:both; overflow:hidden;}
+.con_l {float:left; width:687px; overflow:hidden;}
+.con_r {float:right; width:260px; overflow:hidden;}
+.con_mar {width:100%; height:10px; background:#fff;}
+.con_marbtm {width:100%; height:5px; background:#fff; border-bottom:1px solid #fc6;}
+.con_marbtm2 {width:100%; height:5px; background:#fff; border-bottom:1px solid #d3d3d3;}
+.con_line {width:960px; height:1px; padding:0; background:url(../img/topfo5_cgal_bgline.gif) no-repeat; position:relative; top:-1px; margin:0 auto; clear:both; overflow:hidden;}
+.con_line2 {width:960px; height:1px; padding:0; background:url(../img/topfo5_cgal_bgline2.gif) no-repeat; position:relative; top:-1px; margin:0 auto; clear:both; overflow:hidden;}
+.con_nav {width:960px; height:30px; margin:10px auto 0 auto; overflow:hidden;}
+.con_nav .l {float:left; padding-top:6px;}
+.con_nav .r {float:right; padding-top:5px;}
+.con_inp {width:180px; height:16px; background:#fff; border:1px solid #ccc; padding:3px 0 0 2px;}
+.con_btn {width:55px; height:23px; background:url(../img/topfo5_btn1.gif) 0 420px repeat-y; border:none; color:#f60; padding-top:3px; cursor:pointer; overflow:hidden}
+.con_ad1 {width:260px; overflow:hidden;}
+.con1 {width:637px; border-top:1px solid #fc6; padding:30px 25px 0 25px; overflow:hidden;}
+.con1_tit {height:23px; overflow:hidden;}
+.con1_sub {border-bottom:1px dashed #d3d3d3; padding-bottom:15px; margin-bottom:15px; line-height:21px;}
+.con2_col {height:32px; border:1px solid #fc6; border-bottom:none; background: url(../img/topfo5_bg1.gif) 0 277px; overflow:hidden;}
+.con2_col .l {float:left; background:url(../img/topfo5_icon.gif) 10px 104px repeat-y; padding:11px 0 0 30px;}
+.con2_col .r {float:right; padding:12px 10px 0 0; text-align:right;}
+.con2_sub {line-height:23px; padding:10px 0 10px 15px; border:1px solid #fc6; border-top:none; overflow:hidden;}
+.con3 {width:637px; border-top:1px solid #d3d3d3; padding:30px 25px 0 25px; overflow:hidden;}
+.con3_col {height:32px; border:1px solid #d3d3d3; border-bottom:none; background: url(../img/topfo5_bg1.gif) 0 277px; overflow:hidden;}
+.con3_col .l {float:left; background:url(../img/topfo5_icon.gif) 10px 104px repeat-y; padding:11px 0 0 30px;}
+.con3_col .r {float:right; padding:12px 10px 0 0; text-align:right;}
+.con3_sub {line-height:23px; padding:10px 0 10px 15px; border-bottom:1px solid #d3d3d3;}
+.con3_tit {text-align:center;}
+.con3_text {line-height:25px; padding:25px 0 30px 0;}
+.con3_pic {width:100%; text-align:center; margin:15px auto; overflow:hidden;}
+.con3_btm {height:20px; background:#f6f6f6; text-align:right; padding:7px 10px 0 0; margin-bottom:25px;}
+.con4_col {width:687px; height:40px; background:url(../img/topfo5_bg1.gif) 0 155px; overflow:hidden;}
+.con4_col .l {float:left; height:40px; background:url(../img/topfo5_bg1.gif) 0 200px repeat-y;}
+.con4_col .p {float:left; display:block; background:url(../img/topfo5_pic1.gif) 15px 38px repeat-y; height:25px; padding:15px 0 0 60px;}
+.con4_col .r {float:right; height:40px; background:url(../img/topfo5_bg1.gif) right 245px repeat-y; padding:15px 15px 0 0;}
+.con4 {width:685px; height:219px; border:1px solid #fc6; padding-top:15px; overflow:hidden;}
+.con4_l {float:left; width:375px; border-right:1px dashed #d3d3d3; padding-left:10px; overflow:hidden;}
+.con4_l li {width:365px; height:25px; line-height:25px; overflow:hidden;}
+.con4_r {float:right; width:290px; overflow:hidden;}
+.con4_r .sub {width:100%; margin-bottom:20px;}
+.con4_r .tit {width:95%; height:20px; line-height:20px; margin-bottom:7px; overflow:hidden;}
+.con4_r .pic img {width:80px; height:60px; float:left;}
+.con4_r .text {float:left; width:185px; margin-left:10px; line-height:18px; overflow:hidden;}
+.con4_r .text a {text-decoration:underline;}
+
+/*分页样式*/
+.page {width:100%; margin:20px auto 0 auto; background:url(../img/topfo5_cgal_bg.gif); clear:both; overflow:hidden;}
+.page_sub {float:left;}
+.page_sub a {display:block; border:1px solid #FFD28E; background:#FFFBE8; padding:5px 7px 3px 7px; float:left; margin-right:5px;}
+.page_sub a:link, .page a:visited{color:#333;text-decoration:none;}
+.page_sub a:hover{color:#f00;text-decoration:underline; background:#FFE7C1;}
+.page_sub span {display:block; border:1px solid #FFD28E; background:#ffe7c1; padding:5px 7px 3px 7px; float:left; margin-right:5px;}
+.page_data {float:right; padding-top:6px;}

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ModfiyTemplate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TypeId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Condition" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ModfiyTemplateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ModfiyTemplateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ModfiyTemplateSoapIn">
+    <wsdl:part name="parameters" element="tns:ModfiyTemplate" />
+  </wsdl:message>
+  <wsdl:message name="ModfiyTemplateSoapOut">
+    <wsdl:part name="parameters" element="tns:ModfiyTemplateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ModfiyTemplateHttpGetIn">
+    <wsdl:part name="TypeId" type="s:string" />
+    <wsdl:part name="Condition" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ModfiyTemplateHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ModfiyTemplateHttpPostIn">
+    <wsdl:part name="TypeId" type="s:string" />
+    <wsdl:part name="Condition" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ModfiyTemplateHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="TemplateUpdateSoap">
+    <wsdl:operation name="ModfiyTemplate">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">模板更新</wsdl:documentation>
+      <wsdl:input message="tns:ModfiyTemplateSoapIn" />
+      <wsdl:output message="tns:ModfiyTemplateSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="TemplateUpdateHttpGet">
+    <wsdl:operation name="ModfiyTemplate">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">模板更新</wsdl:documentation>
+      <wsdl:input message="tns:ModfiyTemplateHttpGetIn" />
+      <wsdl:output message="tns:ModfiyTemplateHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="TemplateUpdateHttpPost">
+    <wsdl:operation name="ModfiyTemplate">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">模板更新</wsdl:documentation>
+      <wsdl:input message="tns:ModfiyTemplateHttpPostIn" />
+      <wsdl:output message="tns:ModfiyTemplateHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="TemplateUpdateSoap" type="tns:TemplateUpdateSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ModfiyTemplate">
+      <soap:operation soapAction="http://tempuri.org/ModfiyTemplate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="TemplateUpdateSoap12" type="tns:TemplateUpdateSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ModfiyTemplate">
+      <soap12:operation soapAction="http://tempuri.org/ModfiyTemplate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="TemplateUpdateHttpGet" type="tns:TemplateUpdateHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="ModfiyTemplate">
+      <http:operation location="/ModfiyTemplate" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="TemplateUpdateHttpPost" type="tns:TemplateUpdateHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="ModfiyTemplate">
+      <http:operation location="/ModfiyTemplate" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TemplateUpdate">
+    <wsdl:port name="TemplateUpdateSoap" binding="tns:TemplateUpdateSoap">
+      <soap:address location="http://dp.topfo.com/WebServices/TemplateUpdate.asmx" />
+    </wsdl:port>
+    <wsdl:port name="TemplateUpdateSoap12" binding="tns:TemplateUpdateSoap12">
+      <soap12:address location="http://dp.topfo.com/WebServices/TemplateUpdate.asmx" />
+    </wsdl:port>
+    <wsdl:port name="TemplateUpdateHttpGet" binding="tns:TemplateUpdateHttpGet">
+      <http:address location="http://dp.topfo.com/WebServices/TemplateUpdate.asmx" />
+    </wsdl:port>
+    <wsdl:port name="TemplateUpdateHttpPost" binding="tns:TemplateUpdateHttpPost">
+      <http:address location="http://dp.topfo.com/WebServices/TemplateUpdate.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.topfo.com/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://www.topfo.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.topfo.com/">
+      <s:element name="SjHtml">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="num" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="InfoID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Title" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ProvinceID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CountyID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IndustryOpportunityID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="OpportunityType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="publishT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ValidateTerm" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Content" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Analysis" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Request" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Flow" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SjHtmlResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="SjModifyHtml">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="infoId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SjModifyHtmlResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="SjselAll">
+        <s:complexType />
+      </s:element>
+      <s:element name="SjselAllResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SjselAllResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SjselBegion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="beginfo" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="endinfo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SjselBegionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SjselBegionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SjHtmlSoapIn">
+    <wsdl:part name="parameters" element="tns:SjHtml" />
+  </wsdl:message>
+  <wsdl:message name="SjHtmlSoapOut">
+    <wsdl:part name="parameters" element="tns:SjHtmlResponse" />
+  </wsdl:message>
+  <wsdl:message name="SjModifyHtmlSoapIn">
+    <wsdl:part name="parameters" element="tns:SjModifyHtml" />
+  </wsdl:message>
+  <wsdl:message name="SjModifyHtmlSoapOut">
+    <wsdl:part name="parameters" element="tns:SjModifyHtmlResponse" />
+  </wsdl:message>
+  <wsdl:message name="SjselAllSoapIn">
+    <wsdl:part name="parameters" element="tns:SjselAll" />
+  </wsdl:message>
+  <wsdl:message name="SjselAllSoapOut">
+    <wsdl:part name="parameters" element="tns:SjselAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="SjselBegionSoapIn">
+    <wsdl:part name="parameters" element="tns:SjselBegion" />
+  </wsdl:message>
+  <wsdl:message name="SjselBegionSoapOut">
+    <wsdl:part name="parameters" element="tns:SjselBegionResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SJStaticSoap">
+    <wsdl:operation name="SjHtml">
+      <wsdl:input message="tns:SjHtmlSoapIn" />
+      <wsdl:output message="tns:SjHtmlSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SjModifyHtml">
+      <wsdl:input message="tns:SjModifyHtmlSoapIn" />
+      <wsdl:output message="tns:SjModifyHtmlSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SjselAll">
+      <wsdl:input message="tns:SjselAllSoapIn" />
+      <wsdl:output message="tns:SjselAllSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SjselBegion">
+      <wsdl:input message="tns:SjselBegionSoapIn" />
+      <wsdl:output message="tns:SjselBegionSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SJStaticSoap" type="tns:SJStaticSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SjHtml">
+      <soap:operation soapAction="http://www.topfo.com/SjHtml" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SjModifyHtml">
+      <soap:operation soapAction="http://www.topfo.com/SjModifyHtml" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SjselAll">
+      <soap:operation soapAction="http://www.topfo.com/SjselAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SjselBegion">
+      <soap:operation soapAction="http://www.topfo.com/SjselBegion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SJStaticSoap12" type="tns:SJStaticSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SjHtml">
+      <soap12:operation soapAction="http://www.topfo.com/SjHtml" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SjModifyHtml">
+      <soap12:operation soapAction="http://www.topfo.com/SjModifyHtml" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SjselAll">
+      <soap12:operation soapAction="http://www.topfo.com/SjselAll" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SjselBegion">
+      <soap12:operation soapAction="http://www.topfo.com/SjselBegion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SJStatic">
+    <wsdl:port name="SJStaticSoap" binding="tns:SJStaticSoap">
+      <soap:address location="http://ss.topfo.com/WebService/SJStatic.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SJStaticSoap12" binding="tns:SJStaticSoap12">
+      <soap12:address location="http://ss.topfo.com/WebService/SJStatic.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

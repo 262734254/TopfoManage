@@ -1,0 +1,51 @@
+C:\Documents and Settings\Administrator\桌面\备份文件\TopfoManage\COM\Tz888.BLL\bin\Debug\Tz888.BLL.dll.config
+C:\Documents and Settings\Administrator\桌面\备份文件\TopfoManage\COM\Tz888.BLL\bin\Debug\Tz888.BLL.dll
+C:\Documents and Settings\Administrator\桌面\备份文件\TopfoManage\COM\Tz888.BLL\bin\Debug\Tz888.BLL.pdb
+C:\Documents and Settings\Administrator\桌面\备份文件\TopfoManage\COM\Tz888.BLL\bin\Debug\AjaxPro.2.dll
+C:\Documents and Settings\Administrator\桌面\备份文件\TopfoManage\COM\Tz888.BLL\bin\Debug\Tz888.DALFactory.dll
+C:\Documents and Settings\Administrator\桌面\备份文件\TopfoManage\COM\Tz888.BLL\bin\Debug\Tz888.DBUtility.dll
+C:\Documents and Settings\Administrator\桌面\备份文件\TopfoManage\COM\Tz888.BLL\bin\Debug\Tz888.IDAL.dll
+C:\Documents and Settings\Administrator\桌面\备份文件\TopfoManage\COM\Tz888.BLL\bin\Debug\Tz888.Model.dll
+C:\Documents and Settings\Administrator\桌面\备份文件\TopfoManage\COM\Tz888.BLL\bin\Debug\Tz888.SQLServerDAL.dll
+C:\Documents and Settings\Administrator\桌面\备份文件\TopfoManage\COM\Tz888.BLL\bin\Debug\Tz888.DBUtility.pdb
+C:\Documents and Settings\Administrator\桌面\备份文件\TopfoManage\COM\Tz888.BLL\bin\Debug\Tz888.SQLServerDAL.pdb
+C:\Documents and Settings\Administrator\桌面\备份文件\TopfoManage\COM\Tz888.BLL\bin\Debug\Tz888.DALFactory.pdb
+C:\Documents and Settings\Administrator\桌面\备份文件\TopfoManage\COM\Tz888.BLL\bin\Debug\Tz888.Model.pdb
+C:\Documents and Settings\Administrator\桌面\备份文件\TopfoManage\COM\Tz888.BLL\bin\Debug\Tz888.IDAL.pdb
+C:\Documents and Settings\Administrator\桌面\备份文件\TopfoManage\COM\Tz888.BLL\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\备份文件\TopfoManage\COM\Tz888.BLL\obj\Debug\Tz888.BLL.dll
+C:\Documents and Settings\Administrator\桌面\备份文件\TopfoManage\COM\Tz888.BLL\obj\Debug\Tz888.BLL.pdb
+E:\MyWork\TopfoManage\COM\Tz888.BLL\bin\Release\Tz888.BLL.dll.config
+E:\MyWork\TopfoManage\COM\Tz888.BLL\bin\Release\Tz888.BLL.dll
+E:\MyWork\TopfoManage\COM\Tz888.BLL\bin\Release\Tz888.BLL.pdb
+E:\MyWork\TopfoManage\COM\Tz888.BLL\bin\Release\AjaxPro.2.dll
+E:\MyWork\TopfoManage\COM\Tz888.BLL\bin\Release\Tz888.DALFactory.dll
+E:\MyWork\TopfoManage\COM\Tz888.BLL\bin\Release\Tz888.DBUtility.dll
+E:\MyWork\TopfoManage\COM\Tz888.BLL\bin\Release\Tz888.IDAL.dll
+E:\MyWork\TopfoManage\COM\Tz888.BLL\bin\Release\Tz888.Model.dll
+E:\MyWork\TopfoManage\COM\Tz888.BLL\bin\Release\Tz888.SQLServerDAL.dll
+E:\MyWork\TopfoManage\COM\Tz888.BLL\bin\Release\Tz888.DBUtility.pdb
+E:\MyWork\TopfoManage\COM\Tz888.BLL\bin\Release\Tz888.SQLServerDAL.pdb
+E:\MyWork\TopfoManage\COM\Tz888.BLL\bin\Release\Tz888.DALFactory.pdb
+E:\MyWork\TopfoManage\COM\Tz888.BLL\bin\Release\Tz888.Model.pdb
+E:\MyWork\TopfoManage\COM\Tz888.BLL\bin\Release\Tz888.IDAL.pdb
+E:\MyWork\TopfoManage\COM\Tz888.BLL\obj\Release\ResolveAssemblyReference.cache
+E:\MyWork\TopfoManage\COM\Tz888.BLL\obj\Release\Tz888.BLL.dll
+E:\MyWork\TopfoManage\COM\Tz888.BLL\obj\Release\Tz888.BLL.pdb
+E:\MyWork\TopfoManage\COM\Tz888.BLL\bin\Debug\Tz888.BLL.dll.config
+E:\MyWork\TopfoManage\COM\Tz888.BLL\bin\Debug\Tz888.BLL.dll
+E:\MyWork\TopfoManage\COM\Tz888.BLL\bin\Debug\Tz888.BLL.pdb
+E:\MyWork\TopfoManage\COM\Tz888.BLL\bin\Debug\AjaxPro.2.dll
+E:\MyWork\TopfoManage\COM\Tz888.BLL\bin\Debug\Tz888.DALFactory.dll
+E:\MyWork\TopfoManage\COM\Tz888.BLL\bin\Debug\Tz888.DBUtility.dll
+E:\MyWork\TopfoManage\COM\Tz888.BLL\bin\Debug\Tz888.IDAL.dll
+E:\MyWork\TopfoManage\COM\Tz888.BLL\bin\Debug\Tz888.Model.dll
+E:\MyWork\TopfoManage\COM\Tz888.BLL\bin\Debug\Tz888.SQLServerDAL.dll
+E:\MyWork\TopfoManage\COM\Tz888.BLL\bin\Debug\Tz888.DBUtility.pdb
+E:\MyWork\TopfoManage\COM\Tz888.BLL\bin\Debug\Tz888.SQLServerDAL.pdb
+E:\MyWork\TopfoManage\COM\Tz888.BLL\bin\Debug\Tz888.DALFactory.pdb
+E:\MyWork\TopfoManage\COM\Tz888.BLL\bin\Debug\Tz888.Model.pdb
+E:\MyWork\TopfoManage\COM\Tz888.BLL\bin\Debug\Tz888.IDAL.pdb
+E:\MyWork\TopfoManage\COM\Tz888.BLL\obj\Debug\ResolveAssemblyReference.cache
+E:\MyWork\TopfoManage\COM\Tz888.BLL\obj\Debug\Tz888.BLL.dll
+E:\MyWork\TopfoManage\COM\Tz888.BLL\obj\Debug\Tz888.BLL.pdb

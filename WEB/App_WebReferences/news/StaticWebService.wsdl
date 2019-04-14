@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="CreateHtml">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="NewsID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="title" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="publishT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Content" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Hit" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Pwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateHtmlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateHtmlResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ModifyHtmlFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="infoId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ModifyHtmlFileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ModifyHtmlFileResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CreateHtmlSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateHtml" />
+  </wsdl:message>
+  <wsdl:message name="CreateHtmlSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateHtmlResponse" />
+  </wsdl:message>
+  <wsdl:message name="ModifyHtmlFileSoapIn">
+    <wsdl:part name="parameters" element="tns:ModifyHtmlFile" />
+  </wsdl:message>
+  <wsdl:message name="ModifyHtmlFileSoapOut">
+    <wsdl:part name="parameters" element="tns:ModifyHtmlFileResponse" />
+  </wsdl:message>
+  <wsdl:portType name="StaticWebServiceSoap">
+    <wsdl:operation name="CreateHtml">
+      <wsdl:input message="tns:CreateHtmlSoapIn" />
+      <wsdl:output message="tns:CreateHtmlSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyHtmlFile">
+      <wsdl:input message="tns:ModifyHtmlFileSoapIn" />
+      <wsdl:output message="tns:ModifyHtmlFileSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="StaticWebServiceSoap" type="tns:StaticWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateHtml">
+      <soap:operation soapAction="http://tempuri.org/CreateHtml" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyHtmlFile">
+      <soap:operation soapAction="http://tempuri.org/ModifyHtmlFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="StaticWebServiceSoap12" type="tns:StaticWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateHtml">
+      <soap12:operation soapAction="http://tempuri.org/CreateHtml" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyHtmlFile">
+      <soap12:operation soapAction="http://tempuri.org/ModifyHtmlFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="StaticWebService">
+    <wsdl:port name="StaticWebServiceSoap" binding="tns:StaticWebServiceSoap">
+      <soap:address location="http://news.topfo.com/Service/StaticWebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="StaticWebServiceSoap12" binding="tns:StaticWebServiceSoap12">
+      <soap12:address location="http://news.topfo.com/Service/StaticWebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,26 @@
+﻿<%@ WebHandler Language="C#" Class="Handler" %>
+
+using System;
+using System.Web;
+
+public class Handler : IHttpHandler {
+    
+     Tz888.BLL.ProfessionalManage.ProfessionalinfoBLL bll = new Tz888.BLL.ProfessionalManage.ProfessionalinfoBLL();
+
+    public void ProcessRequest(HttpContext context)
+    {
+        context.Response.ContentType = "text/plain";
+        int InfoID = Convert.ToInt32(context.Request["CompanyID"]);
+        string balk = context.Request["jsoncallback"];
+        int num = bll.ModfiyHit(InfoID);
+        string com = num.ToString();
+        context.Response.Write(balk + "({name:" + com + "})");
+    }
+ 
+    public bool IsReusable {
+        get {
+            return false;
+        }
+    }
+
+}

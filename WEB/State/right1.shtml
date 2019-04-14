@@ -1,0 +1,32 @@
+﻿<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>把页面添加到收藏夹</title>
+</head>
+
+<body> 
+<p>代码一：<a onclick="window.external.AddFavorite(location.href, document.title);" title="阿杰博客" style="cursor:hand">收藏本页</a> </p>
+<p><br>
+
+代码二：<a href="javascript:window.external.AddFavorite(location.href, document.title)">收藏本站</a></p>
+
+<p>
+<script language="javascript">
+  function addFavorite(url,title){
+    var fav_url = url;
+ var fav_title = title;
+ if (document.all && window.external){
+   window.external.AddFavorite(fav_url,fav_title);
+ }else if (window.sidebar){
+   window.sidebar.addPanel(fav_title,fav_url,"");
+ }else{
+   alert("浏览器不支持，请手动加入收藏夹");
+ }
+  }
+</script>
+代码三：<a href="javascript:addFavorite('http://www.lenqin.cn','阿杰博客');">添加收藏</a>
+</p>
+</body>
+
+</html>

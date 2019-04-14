@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>合作项目</title>
+<link rel="stylesheet" type="text/css" href="http://img2.topfo.com/dp/css/common.css" />
+<link rel="stylesheet" type="text/css" href="http://img2.topfo.com/dp/css/overview.css" />
+</head>
+<body>
+<script language="javascript" >
+	function qiehuan(num){
+		for(var id = 0;id<=7;id++)
+		{
+			if(id==num)
+			{
+				document.getElementById("qh_con"+id).style.display="block";
+				document.getElementById("mynav"+id).className="nav_on";
+						else
+			{
+				document.getElementById("qh_con"+id).style.display="none";
+				document.getElementById("mynav"+id).className="";
+			}
+		}
+	}
+</script>
+<!--鼠标触发JS-->
+<script language="javascript" type="text/javascript" src="http://img2.topfo.com/dp/js/trigger.js" ></script>
+<script language="javascript">
+function showAndHide(obj,types,num,type){
+    var Layer=window.document.getElementById(obj);
+    switch(types){
+  case "show":
+    Layer.style.display="block";
+  break;
+  case "hide":
+    Layer.style.display="none";
+  break;
+}
+  }
+  function getValue(obj,str,num,type){
+    var input=window.document.getElementById(obj);
+input.value=str;
+  }
+
+</script>
+<!--头部开始-->
+<div class="top"> <a href="#">[会员登录]</a> <a href="#">[免费注册]</a> <a href="http://www.topfo.com/">首页</a>│ <a href="javascript:window.external.AddFavorite('#','
+  拓富网')">加入收藏</a></div>
+<div class="logo"> <span class="l img"><img src="http://dp.topfo.com/logo/$Name$/$Name$pic.jpg" width="250" height="92" /></span><span class="r"><img src="http://dp.topfo.com/logo/$Name$/$Name$index.jpg" /></span> </div>
+<div class="navment">
+  <ul>
+    <li> <a href="index.htm">首 页</a> </li>
+    <li> <a href="Regionaloverview.htm" >区域概况</a> </li>
+    <li> <a href="Preferentialpolicies.htm" >优惠政策</a> </li>
+    <li> <a href="Park.htm">特色园区</a> </li>
+    <li> <a href="project.htm" >资本合作</a> </li>
+    <li> <a href="project.htm" id="xiaog">合作项目</a> </li>
+    <li> <a href="Investmentenvironment.htm">投资环境</a> </li>
+    <li> <a href="cost.htm">投资成本</a> </li>
+    <li> <a href="video.htm">视频展示</a> </li>
+    <li> <a href="Photogallery.htm" >图片展示</a> </li>
+  </ul>
+</div>
+<!--头部结束-->
+<div class="weizhi"> <img src="http://img2.topfo.com/dp/images/xiangm_03.jpg" /> </div>
+<!--内容开始-->
+
+
+
+ 
+<div class="zf-search">
+ <ul>
+  <li>
+   <img src="http://img2.topfo.com/dp/images/xiangm_12.jpg" />
+  </li>
+  <li id="sousuo">
+     <input name="txt" type="text" id="txt" onfocus="showAndHide('List1','show');" onblur="showAndHide('List1','hide');" value="选择行业"  class="sous-inp1"/>
+     <input name="type1" type="hidden" id="Induy" />
+     <div class="aMenu" id="List1">
+        <div class="aMenu1">
+          <ul>
+            <li onmousedown="getValue('txt','批发零售');showAndHide('List1','hide');"><a href="#"> 批发零售</a></li>
+            <li onmousedown="getValue('txt','房地产业');showAndHide('List1','hide');"><a href="#">房地产业</a></li>
+            <li onmousedown="getValue('txt','农林牧渔');showAndHide('List1','hide');"><a href="#">农林牧渔</a></li>
+            <li onmousedown="getValue('txt','食品饮料');showAndHide('List1','hide');"><a href="#">食品饮料</a></li>
+            <li onmousedown="getValue('txt','冶金矿产');showAndHide('List1','hide');"><a href="#">冶金矿产</a></li>
+            <li onmousedown="getValue('txt','机械制造');showAndHide('List1','hide');"><a href="#">机械制造</a></li>
+            <li onmousedown="getValue('txt','汽车汽配');showAndHide('List1','hide');"><a href="#">汽车汽配</a></li>
+            <li onmousedown="getValue('txt','能源动力');showAndHide('List1','hide');"><a href="#"> 能源动力</a></li>
+            <li onmousedown="getValue('txt','石油化工');showAndHide('List1','hide');"><a href="#">石油化工</a></li>
+            <li onmousedown="getValue('txt','纺织服装');showAndHide('List1','hide');"><a href="#">纺织服装</a></li>
+            <li onmousedown="getValue('txt','环境保护');showAndHide('List1','hide');"><a href="#">环境保护</a></li>
+            <li onmousedown="getValue('txt','医疗保健');showAndHide('List1','hide');"><a href="#">医疗保健</a></li>
+            <li onmousedown="getValue('txt','生物科技');showAndHide('List1','hide');"><a href="#">生物科技</a></li>
+            <li onmousedown="getValue('txt','教育培训');showAndHide('List1','hide');"><a href="#">教育培训</a></li>
+            <li onmousedown="getValue('txt','印刷出版');showAndHide('List1','hide');"><a href="#"> 印刷出版</a></li>
+            <li onmousedown="getValue('txt','广告传媒');showAndHide('List1','hide');"><a href="#">广告传媒</a></li>
+            <li onmousedown="getValue('txt','影视娱乐');showAndHide('List1','hide');"><a href="#">影视娱乐</a></li>
+            <li onmousedown="getValue('txt','电子通讯');showAndHide('List1','hide');"><a href="#">电子通讯</a></li>
+            <li onmousedown="getValue('txt','信息产业');showAndHide('List1','hide');"><a href="#">建筑建材</a></li>
+            <li onmousedown="getValue('txt','信息产业');showAndHide('List1','hide');"><a href="#">信息产业</a></li>
+            <li onmousedown="getValue('txt','高新技术');showAndHide('List1','hide');"><a href="#">高新技术</a></li>
+            <li onmousedown="getValue('txt','基础设施');showAndHide('List1','hide');"><a href="#">基础设施</a></li>
+            <li onmousedown="getValue('txt','交通运输');showAndHide('List1','hide');"><a href="#">交通运输</a></li>
+            <li onmousedown="getValue('txt','物流仓储');showAndHide('List1','hide');"><a href="#">物流仓储</a></li>
+            <li onmousedown="getValue('txt','金融投资');showAndHide('List1','hide');"><a href="#">金融投资</a></li>
+            <li onmousedown="getValue('txt','旅游休闲');showAndHide('List1','hide');"><a href="#">旅游休闲</a></li>
+            <li onmousedown="getValue('txt','社会服务');showAndHide('List1','hide');"><a href="#">社会服务</a></li>
+            <li onmousedown="getValue('txt','酒店餐饮');showAndHide('List1','hide');"><a href="#">酒店餐饮</a></li>
+            <li onmousedown="getValue('txt','所有行业');showAndHide('List1','hide');"><a href="#">所有行业</a></li>
+            <li onmousedown="getValue('txt','其它行业');showAndHide('List1','hide');"><a href="#">其它行业</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      
+    <input   value="请输入关键字" onfocus="if(this.value=='请输入关键字'){this.value='';this.style.color='#333333'}" onblur="if(this.value==''){this.value='请输入关键字';this.style.color='#999999'};" type="text" class="sous-inp2"/>
+  </li>
+  <li> 
+<img src="http://img2.topfo.com/dp/images/xiangm2_05.jpg" />
+  </li>
+<!--  <li>
+ <img src="http://img2.topfo.com/dp/images/xiangm2_03.jpg" />
+  </li>-->
+ </ul>
+</div>
+<div class="index-con">
+  <div class="index-left">
+    <div class="infor">
+     <h1>
+      投资项目
+     </h1>
+    <table width="676" border="0" cellspacing="0" cellpadding="0">
+    <thead>
+  <tr>
+    <td width="321" style="width:321px">项目名称</td>
+    <td width="159" style=" width:159px">行业</td>
+    <td width="107" style="width:107px">金额</td>
+    <td width="89" style="width:89px">回报率</td>
+  </tr>
+  </thead>
+  <tbody>
+ 
+  </tbody>
+</table>
+
+   <div class="pages1"> <span> <a href="#" title="首页"><img src="http://img2.topfo.com/dp/images/btn_frist_01.gif" alt="首页" border="0"/ align="absmiddle"></a></span>  <span><a href="#" title="上一页"><img src="http://img2.topfo.com/dp/images/btn_prev_01.gif" alt="上一页" border="0" align="absmiddle"></a></span> 当前第 1 页 共 1 页<a href="#" title="下一页"><img src="http://img2.topfo.com/dp/images/btn_next_01.gif" style="margin: 0pt 0pt 0pt 8px;" alt="下一页" border="0" align="absmiddle"></a> <a href="#" title="尾页"><img src="http://img2.topfo.com/dp/images/btn_last_01.gif" style="margin: 0pt 0pt 0pt 8px;" alt="尾页" border="0" align="absmiddle"></a></div>
+    </div>
+  </div>
+  <div class="index-right">
+    
+    <div class="index-right-g">
+      <div class="index-right-g-tit" id="zx-bj"> <span class="index-right-g-tit1">最新项目</span><span class="index-right-g-tit2"><a href="#">更多></a></span> </div>
+      <div class="index-zx">
+       <ul>
+       
+       </ul>
+      </div>
+    </div>
+    <div class="index-right-g" >
+      <div class="index-right-g-tit" id="zx-bj"> <span class="index-right-g-tit1">投资合作</span><span class="index-right-g-tit2"><a href="#">更多></a></span> </div>
+      <div class="index-gk"> <img src="http://img2.topfo.com/dp/images/index_36.jpg" />
+        <p></p>
+      </div>
+    </div>
+    <div class="index-right-g">
+      <div class="index-right-g-tit" id="zx-bj"> <span class="index-right-g-tit1">优惠政策</span><span class="index-right-g-tit2"><a href="#">更多></a></span> </div>
+      <div class="index-gk"> <img src="http://img2.topfo.com/dp/images/index_36.jpg" />
+        <p></p>
+        <div class="index-zc">
+         <ul>
+         
+         </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--</div>-->
+
+
+<!--内容结束-->
+<!--底部开始-->
+<div class="down">
+  <div class="down-menu"> <a href="index.htm">首页</a>│<a href="http://www.topfo.com/aboutus/index.shtml">关于我们</a>│<a href="http://www.topfo.com/ContactUs.shtml">联系我们</a>│<a href="javascript:window.external.AddFavorite('#','
+  拓富网')">加入收藏</a>│<a href="video.htm">视频展示</a>│<a href="Photogallery.htm">图片展示</a>│<a href="Park.htm">特色园区</a>│<a href="cost.htm">投资成本</a> </div>
+  <p> 中国招商投资网版权所有中国招商投资网版权所有 </p>
+</div>
+<!--底部结束-->
+</body>
+</html>

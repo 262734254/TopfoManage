@@ -1,0 +1,1047 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s1="http://tempuri.org/AbstractTypes" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Index">
+        <s:complexType />
+      </s:element>
+      <s:element name="IndexResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IndexResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QyIndex">
+        <s:complexType />
+      </s:element>
+      <s:element name="QyIndexResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="QyIndexResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Write">
+        <s:complexType />
+      </s:element>
+      <s:element name="WriteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="WriteResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ShopCenter">
+        <s:complexType />
+      </s:element>
+      <s:element name="ShopCenterResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ShopCenterResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BusinessStreet">
+        <s:complexType />
+      </s:element>
+      <s:element name="BusinessStreetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="BusinessStreetResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Sale">
+        <s:complexType />
+      </s:element>
+      <s:element name="SaleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SaleResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RetailShop">
+        <s:complexType />
+      </s:element>
+      <s:element name="RetailShopResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RetailShopResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="YardHouse">
+        <s:complexType />
+      </s:element>
+      <s:element name="YardHouseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="YardHouseResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MatingService">
+        <s:complexType />
+      </s:element>
+      <s:element name="MatingServiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="MatingServiceResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpCommerceImages">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="imgName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="byteFileStream" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpCommerceImagesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpCommerceImagesResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AllGenerate">
+        <s:complexType />
+      </s:element>
+      <s:element name="AllGenerateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AllGenerateResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenerateContract">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenerateContractResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GenerateContractResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+      <s:element name="int" type="s:int" />
+    </s:schema>
+    <s:schema targetNamespace="http://tempuri.org/AbstractTypes">
+      <s:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <s:complexType name="StringArray">
+        <s:complexContent mixed="false">
+          <s:restriction base="soapenc:Array">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="unbounded" name="String" type="s:string" />
+            </s:sequence>
+          </s:restriction>
+        </s:complexContent>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="IndexSoapIn">
+    <wsdl:part name="parameters" element="tns:Index" />
+  </wsdl:message>
+  <wsdl:message name="IndexSoapOut">
+    <wsdl:part name="parameters" element="tns:IndexResponse" />
+  </wsdl:message>
+  <wsdl:message name="QyIndexSoapIn">
+    <wsdl:part name="parameters" element="tns:QyIndex" />
+  </wsdl:message>
+  <wsdl:message name="QyIndexSoapOut">
+    <wsdl:part name="parameters" element="tns:QyIndexResponse" />
+  </wsdl:message>
+  <wsdl:message name="WriteSoapIn">
+    <wsdl:part name="parameters" element="tns:Write" />
+  </wsdl:message>
+  <wsdl:message name="WriteSoapOut">
+    <wsdl:part name="parameters" element="tns:WriteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ShopCenterSoapIn">
+    <wsdl:part name="parameters" element="tns:ShopCenter" />
+  </wsdl:message>
+  <wsdl:message name="ShopCenterSoapOut">
+    <wsdl:part name="parameters" element="tns:ShopCenterResponse" />
+  </wsdl:message>
+  <wsdl:message name="BusinessStreetSoapIn">
+    <wsdl:part name="parameters" element="tns:BusinessStreet" />
+  </wsdl:message>
+  <wsdl:message name="BusinessStreetSoapOut">
+    <wsdl:part name="parameters" element="tns:BusinessStreetResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaleSoapIn">
+    <wsdl:part name="parameters" element="tns:Sale" />
+  </wsdl:message>
+  <wsdl:message name="SaleSoapOut">
+    <wsdl:part name="parameters" element="tns:SaleResponse" />
+  </wsdl:message>
+  <wsdl:message name="RetailShopSoapIn">
+    <wsdl:part name="parameters" element="tns:RetailShop" />
+  </wsdl:message>
+  <wsdl:message name="RetailShopSoapOut">
+    <wsdl:part name="parameters" element="tns:RetailShopResponse" />
+  </wsdl:message>
+  <wsdl:message name="YardHouseSoapIn">
+    <wsdl:part name="parameters" element="tns:YardHouse" />
+  </wsdl:message>
+  <wsdl:message name="YardHouseSoapOut">
+    <wsdl:part name="parameters" element="tns:YardHouseResponse" />
+  </wsdl:message>
+  <wsdl:message name="MatingServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:MatingService" />
+  </wsdl:message>
+  <wsdl:message name="MatingServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:MatingServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpCommerceImagesSoapIn">
+    <wsdl:part name="parameters" element="tns:UpCommerceImages" />
+  </wsdl:message>
+  <wsdl:message name="UpCommerceImagesSoapOut">
+    <wsdl:part name="parameters" element="tns:UpCommerceImagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="AllGenerateSoapIn">
+    <wsdl:part name="parameters" element="tns:AllGenerate" />
+  </wsdl:message>
+  <wsdl:message name="AllGenerateSoapOut">
+    <wsdl:part name="parameters" element="tns:AllGenerateResponse" />
+  </wsdl:message>
+  <wsdl:message name="GenerateContractSoapIn">
+    <wsdl:part name="parameters" element="tns:GenerateContract" />
+  </wsdl:message>
+  <wsdl:message name="GenerateContractSoapOut">
+    <wsdl:part name="parameters" element="tns:GenerateContractResponse" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldHttpGetIn" />
+  <wsdl:message name="HelloWorldHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="IndexHttpGetIn" />
+  <wsdl:message name="IndexHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="QyIndexHttpGetIn" />
+  <wsdl:message name="QyIndexHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="WriteHttpGetIn" />
+  <wsdl:message name="WriteHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="ShopCenterHttpGetIn" />
+  <wsdl:message name="ShopCenterHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="BusinessStreetHttpGetIn" />
+  <wsdl:message name="BusinessStreetHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="SaleHttpGetIn" />
+  <wsdl:message name="SaleHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="RetailShopHttpGetIn" />
+  <wsdl:message name="RetailShopHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="YardHouseHttpGetIn" />
+  <wsdl:message name="YardHouseHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="MatingServiceHttpGetIn" />
+  <wsdl:message name="MatingServiceHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="UpCommerceImagesHttpGetIn">
+    <wsdl:part name="imgName" type="s:string" />
+    <wsdl:part name="byteFileStream" type="s1:StringArray" />
+  </wsdl:message>
+  <wsdl:message name="UpCommerceImagesHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="AllGenerateHttpGetIn" />
+  <wsdl:message name="AllGenerateHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="GenerateContractHttpGetIn">
+    <wsdl:part name="id" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GenerateContractHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldHttpPostIn" />
+  <wsdl:message name="HelloWorldHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="IndexHttpPostIn" />
+  <wsdl:message name="IndexHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="QyIndexHttpPostIn" />
+  <wsdl:message name="QyIndexHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="WriteHttpPostIn" />
+  <wsdl:message name="WriteHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="ShopCenterHttpPostIn" />
+  <wsdl:message name="ShopCenterHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="BusinessStreetHttpPostIn" />
+  <wsdl:message name="BusinessStreetHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="SaleHttpPostIn" />
+  <wsdl:message name="SaleHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="RetailShopHttpPostIn" />
+  <wsdl:message name="RetailShopHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="YardHouseHttpPostIn" />
+  <wsdl:message name="YardHouseHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="MatingServiceHttpPostIn" />
+  <wsdl:message name="MatingServiceHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="UpCommerceImagesHttpPostIn">
+    <wsdl:part name="imgName" type="s:string" />
+    <wsdl:part name="byteFileStream" type="s1:StringArray" />
+  </wsdl:message>
+  <wsdl:message name="UpCommerceImagesHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="AllGenerateHttpPostIn" />
+  <wsdl:message name="AllGenerateHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="GenerateContractHttpPostIn">
+    <wsdl:part name="id" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GenerateContractHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:portType name="GenerateStaticSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">测试</wsdl:documentation>
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Index">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">首页</wsdl:documentation>
+      <wsdl:input message="tns:IndexSoapIn" />
+      <wsdl:output message="tns:IndexSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QyIndex">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">首页</wsdl:documentation>
+      <wsdl:input message="tns:QyIndexSoapIn" />
+      <wsdl:output message="tns:QyIndexSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Write">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">写字楼</wsdl:documentation>
+      <wsdl:input message="tns:WriteSoapIn" />
+      <wsdl:output message="tns:WriteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ShopCenter">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">购物中心</wsdl:documentation>
+      <wsdl:input message="tns:ShopCenterSoapIn" />
+      <wsdl:output message="tns:ShopCenterSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BusinessStreet">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">商业街</wsdl:documentation>
+      <wsdl:input message="tns:BusinessStreetSoapIn" />
+      <wsdl:output message="tns:BusinessStreetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Sale">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">批发市场</wsdl:documentation>
+      <wsdl:input message="tns:SaleSoapIn" />
+      <wsdl:output message="tns:SaleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RetailShop">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">商铺</wsdl:documentation>
+      <wsdl:input message="tns:RetailShopSoapIn" />
+      <wsdl:output message="tns:RetailShopSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="YardHouse">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">厂房</wsdl:documentation>
+      <wsdl:input message="tns:YardHouseSoapIn" />
+      <wsdl:output message="tns:YardHouseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MatingService">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">配套服务</wsdl:documentation>
+      <wsdl:input message="tns:MatingServiceSoapIn" />
+      <wsdl:output message="tns:MatingServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpCommerceImages">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">上传资源图片文件</wsdl:documentation>
+      <wsdl:input message="tns:UpCommerceImagesSoapIn" />
+      <wsdl:output message="tns:UpCommerceImagesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AllGenerate">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">全部生成</wsdl:documentation>
+      <wsdl:input message="tns:AllGenerateSoapIn" />
+      <wsdl:output message="tns:AllGenerateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerateContract">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">生成全同</wsdl:documentation>
+      <wsdl:input message="tns:GenerateContractSoapIn" />
+      <wsdl:output message="tns:GenerateContractSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="GenerateStaticHttpGet">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">测试</wsdl:documentation>
+      <wsdl:input message="tns:HelloWorldHttpGetIn" />
+      <wsdl:output message="tns:HelloWorldHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Index">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">首页</wsdl:documentation>
+      <wsdl:input message="tns:IndexHttpGetIn" />
+      <wsdl:output message="tns:IndexHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QyIndex">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">首页</wsdl:documentation>
+      <wsdl:input message="tns:QyIndexHttpGetIn" />
+      <wsdl:output message="tns:QyIndexHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Write">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">写字楼</wsdl:documentation>
+      <wsdl:input message="tns:WriteHttpGetIn" />
+      <wsdl:output message="tns:WriteHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ShopCenter">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">购物中心</wsdl:documentation>
+      <wsdl:input message="tns:ShopCenterHttpGetIn" />
+      <wsdl:output message="tns:ShopCenterHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BusinessStreet">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">商业街</wsdl:documentation>
+      <wsdl:input message="tns:BusinessStreetHttpGetIn" />
+      <wsdl:output message="tns:BusinessStreetHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Sale">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">批发市场</wsdl:documentation>
+      <wsdl:input message="tns:SaleHttpGetIn" />
+      <wsdl:output message="tns:SaleHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RetailShop">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">商铺</wsdl:documentation>
+      <wsdl:input message="tns:RetailShopHttpGetIn" />
+      <wsdl:output message="tns:RetailShopHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="YardHouse">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">厂房</wsdl:documentation>
+      <wsdl:input message="tns:YardHouseHttpGetIn" />
+      <wsdl:output message="tns:YardHouseHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MatingService">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">配套服务</wsdl:documentation>
+      <wsdl:input message="tns:MatingServiceHttpGetIn" />
+      <wsdl:output message="tns:MatingServiceHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpCommerceImages">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">上传资源图片文件</wsdl:documentation>
+      <wsdl:input message="tns:UpCommerceImagesHttpGetIn" />
+      <wsdl:output message="tns:UpCommerceImagesHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AllGenerate">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">全部生成</wsdl:documentation>
+      <wsdl:input message="tns:AllGenerateHttpGetIn" />
+      <wsdl:output message="tns:AllGenerateHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerateContract">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">生成全同</wsdl:documentation>
+      <wsdl:input message="tns:GenerateContractHttpGetIn" />
+      <wsdl:output message="tns:GenerateContractHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="GenerateStaticHttpPost">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">测试</wsdl:documentation>
+      <wsdl:input message="tns:HelloWorldHttpPostIn" />
+      <wsdl:output message="tns:HelloWorldHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Index">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">首页</wsdl:documentation>
+      <wsdl:input message="tns:IndexHttpPostIn" />
+      <wsdl:output message="tns:IndexHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QyIndex">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">首页</wsdl:documentation>
+      <wsdl:input message="tns:QyIndexHttpPostIn" />
+      <wsdl:output message="tns:QyIndexHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Write">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">写字楼</wsdl:documentation>
+      <wsdl:input message="tns:WriteHttpPostIn" />
+      <wsdl:output message="tns:WriteHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ShopCenter">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">购物中心</wsdl:documentation>
+      <wsdl:input message="tns:ShopCenterHttpPostIn" />
+      <wsdl:output message="tns:ShopCenterHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BusinessStreet">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">商业街</wsdl:documentation>
+      <wsdl:input message="tns:BusinessStreetHttpPostIn" />
+      <wsdl:output message="tns:BusinessStreetHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Sale">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">批发市场</wsdl:documentation>
+      <wsdl:input message="tns:SaleHttpPostIn" />
+      <wsdl:output message="tns:SaleHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RetailShop">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">商铺</wsdl:documentation>
+      <wsdl:input message="tns:RetailShopHttpPostIn" />
+      <wsdl:output message="tns:RetailShopHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="YardHouse">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">厂房</wsdl:documentation>
+      <wsdl:input message="tns:YardHouseHttpPostIn" />
+      <wsdl:output message="tns:YardHouseHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MatingService">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">配套服务</wsdl:documentation>
+      <wsdl:input message="tns:MatingServiceHttpPostIn" />
+      <wsdl:output message="tns:MatingServiceHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpCommerceImages">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">上传资源图片文件</wsdl:documentation>
+      <wsdl:input message="tns:UpCommerceImagesHttpPostIn" />
+      <wsdl:output message="tns:UpCommerceImagesHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AllGenerate">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">全部生成</wsdl:documentation>
+      <wsdl:input message="tns:AllGenerateHttpPostIn" />
+      <wsdl:output message="tns:AllGenerateHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerateContract">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">生成全同</wsdl:documentation>
+      <wsdl:input message="tns:GenerateContractHttpPostIn" />
+      <wsdl:output message="tns:GenerateContractHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="GenerateStaticSoap" type="tns:GenerateStaticSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Index">
+      <soap:operation soapAction="http://tempuri.org/Index" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QyIndex">
+      <soap:operation soapAction="http://tempuri.org/QyIndex" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Write">
+      <soap:operation soapAction="http://tempuri.org/Write" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShopCenter">
+      <soap:operation soapAction="http://tempuri.org/ShopCenter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BusinessStreet">
+      <soap:operation soapAction="http://tempuri.org/BusinessStreet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sale">
+      <soap:operation soapAction="http://tempuri.org/Sale" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetailShop">
+      <soap:operation soapAction="http://tempuri.org/RetailShop" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="YardHouse">
+      <soap:operation soapAction="http://tempuri.org/YardHouse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MatingService">
+      <soap:operation soapAction="http://tempuri.org/MatingService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpCommerceImages">
+      <soap:operation soapAction="http://tempuri.org/UpCommerceImages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AllGenerate">
+      <soap:operation soapAction="http://tempuri.org/AllGenerate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerateContract">
+      <soap:operation soapAction="http://tempuri.org/GenerateContract" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="GenerateStaticSoap12" type="tns:GenerateStaticSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Index">
+      <soap12:operation soapAction="http://tempuri.org/Index" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QyIndex">
+      <soap12:operation soapAction="http://tempuri.org/QyIndex" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Write">
+      <soap12:operation soapAction="http://tempuri.org/Write" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShopCenter">
+      <soap12:operation soapAction="http://tempuri.org/ShopCenter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BusinessStreet">
+      <soap12:operation soapAction="http://tempuri.org/BusinessStreet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sale">
+      <soap12:operation soapAction="http://tempuri.org/Sale" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetailShop">
+      <soap12:operation soapAction="http://tempuri.org/RetailShop" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="YardHouse">
+      <soap12:operation soapAction="http://tempuri.org/YardHouse" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MatingService">
+      <soap12:operation soapAction="http://tempuri.org/MatingService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpCommerceImages">
+      <soap12:operation soapAction="http://tempuri.org/UpCommerceImages" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AllGenerate">
+      <soap12:operation soapAction="http://tempuri.org/AllGenerate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerateContract">
+      <soap12:operation soapAction="http://tempuri.org/GenerateContract" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="GenerateStaticHttpGet" type="tns:GenerateStaticHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="HelloWorld">
+      <http:operation location="/HelloWorld" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Index">
+      <http:operation location="/Index" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QyIndex">
+      <http:operation location="/QyIndex" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Write">
+      <http:operation location="/Write" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShopCenter">
+      <http:operation location="/ShopCenter" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BusinessStreet">
+      <http:operation location="/BusinessStreet" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sale">
+      <http:operation location="/Sale" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetailShop">
+      <http:operation location="/RetailShop" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="YardHouse">
+      <http:operation location="/YardHouse" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MatingService">
+      <http:operation location="/MatingService" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpCommerceImages">
+      <http:operation location="/UpCommerceImages" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AllGenerate">
+      <http:operation location="/AllGenerate" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerateContract">
+      <http:operation location="/GenerateContract" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="GenerateStaticHttpPost" type="tns:GenerateStaticHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="HelloWorld">
+      <http:operation location="/HelloWorld" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Index">
+      <http:operation location="/Index" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QyIndex">
+      <http:operation location="/QyIndex" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Write">
+      <http:operation location="/Write" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShopCenter">
+      <http:operation location="/ShopCenter" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BusinessStreet">
+      <http:operation location="/BusinessStreet" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sale">
+      <http:operation location="/Sale" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetailShop">
+      <http:operation location="/RetailShop" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="YardHouse">
+      <http:operation location="/YardHouse" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MatingService">
+      <http:operation location="/MatingService" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpCommerceImages">
+      <http:operation location="/UpCommerceImages" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AllGenerate">
+      <http:operation location="/AllGenerate" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerateContract">
+      <http:operation location="/GenerateContract" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="GenerateStatic">
+    <wsdl:port name="GenerateStaticSoap" binding="tns:GenerateStaticSoap">
+      <soap:address location="http://wyzs.topfo.com/GenerateStatic.asmx" />
+    </wsdl:port>
+    <wsdl:port name="GenerateStaticSoap12" binding="tns:GenerateStaticSoap12">
+      <soap12:address location="http://wyzs.topfo.com/GenerateStatic.asmx" />
+    </wsdl:port>
+    <wsdl:port name="GenerateStaticHttpGet" binding="tns:GenerateStaticHttpGet">
+      <http:address location="http://wyzs.topfo.com/GenerateStatic.asmx" />
+    </wsdl:port>
+    <wsdl:port name="GenerateStaticHttpPost" binding="tns:GenerateStaticHttpPost">
+      <http:address location="http://wyzs.topfo.com/GenerateStatic.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

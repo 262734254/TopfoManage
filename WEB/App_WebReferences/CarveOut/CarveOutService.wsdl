@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="CreateHtml">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="NewsID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="title" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="publishT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Content" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Hit" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Address" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CapitalID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ComName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IndustryCarveOutID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="InvestObject" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="InvestReturn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LinkMan" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PostCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ProvinceID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Tel" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ValidateID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="WebSite" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="KeyWord" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CarveOutInfoType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Pwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateHtmlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateHtmlResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ModifyHtmlFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="infoId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ModifyHtmlFileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ModifyHtmlFileResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+      <s:element name="int" type="s:int" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CreateHtmlSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateHtml" />
+  </wsdl:message>
+  <wsdl:message name="CreateHtmlSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateHtmlResponse" />
+  </wsdl:message>
+  <wsdl:message name="ModifyHtmlFileSoapIn">
+    <wsdl:part name="parameters" element="tns:ModifyHtmlFile" />
+  </wsdl:message>
+  <wsdl:message name="ModifyHtmlFileSoapOut">
+    <wsdl:part name="parameters" element="tns:ModifyHtmlFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateHtmlHttpGetIn">
+    <wsdl:part name="NewsID" type="s:string" />
+    <wsdl:part name="title" type="s:string" />
+    <wsdl:part name="publishT" type="s:string" />
+    <wsdl:part name="Content" type="s:string" />
+    <wsdl:part name="Hit" type="s:string" />
+    <wsdl:part name="Address" type="s:string" />
+    <wsdl:part name="CapitalID" type="s:string" />
+    <wsdl:part name="ComName" type="s:string" />
+    <wsdl:part name="Email" type="s:string" />
+    <wsdl:part name="IndustryCarveOutID" type="s:string" />
+    <wsdl:part name="InvestObject" type="s:string" />
+    <wsdl:part name="InvestReturn" type="s:string" />
+    <wsdl:part name="LinkMan" type="s:string" />
+    <wsdl:part name="PostCode" type="s:string" />
+    <wsdl:part name="ProvinceID" type="s:string" />
+    <wsdl:part name="Tel" type="s:string" />
+    <wsdl:part name="ValidateID" type="s:string" />
+    <wsdl:part name="WebSite" type="s:string" />
+    <wsdl:part name="KeyWord" type="s:string" />
+    <wsdl:part name="CarveOutInfoType" type="s:string" />
+    <wsdl:part name="name" type="s:string" />
+    <wsdl:part name="Pwd" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CreateHtmlHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ModifyHtmlFileHttpGetIn">
+    <wsdl:part name="infoId" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ModifyHtmlFileHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="CreateHtmlHttpPostIn">
+    <wsdl:part name="NewsID" type="s:string" />
+    <wsdl:part name="title" type="s:string" />
+    <wsdl:part name="publishT" type="s:string" />
+    <wsdl:part name="Content" type="s:string" />
+    <wsdl:part name="Hit" type="s:string" />
+    <wsdl:part name="Address" type="s:string" />
+    <wsdl:part name="CapitalID" type="s:string" />
+    <wsdl:part name="ComName" type="s:string" />
+    <wsdl:part name="Email" type="s:string" />
+    <wsdl:part name="IndustryCarveOutID" type="s:string" />
+    <wsdl:part name="InvestObject" type="s:string" />
+    <wsdl:part name="InvestReturn" type="s:string" />
+    <wsdl:part name="LinkMan" type="s:string" />
+    <wsdl:part name="PostCode" type="s:string" />
+    <wsdl:part name="ProvinceID" type="s:string" />
+    <wsdl:part name="Tel" type="s:string" />
+    <wsdl:part name="ValidateID" type="s:string" />
+    <wsdl:part name="WebSite" type="s:string" />
+    <wsdl:part name="KeyWord" type="s:string" />
+    <wsdl:part name="CarveOutInfoType" type="s:string" />
+    <wsdl:part name="name" type="s:string" />
+    <wsdl:part name="Pwd" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CreateHtmlHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ModifyHtmlFileHttpPostIn">
+    <wsdl:part name="infoId" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ModifyHtmlFileHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:portType name="CarveOutServiceSoap">
+    <wsdl:operation name="CreateHtml">
+      <wsdl:input message="tns:CreateHtmlSoapIn" />
+      <wsdl:output message="tns:CreateHtmlSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyHtmlFile">
+      <wsdl:input message="tns:ModifyHtmlFileSoapIn" />
+      <wsdl:output message="tns:ModifyHtmlFileSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="CarveOutServiceHttpGet">
+    <wsdl:operation name="CreateHtml">
+      <wsdl:input message="tns:CreateHtmlHttpGetIn" />
+      <wsdl:output message="tns:CreateHtmlHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyHtmlFile">
+      <wsdl:input message="tns:ModifyHtmlFileHttpGetIn" />
+      <wsdl:output message="tns:ModifyHtmlFileHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="CarveOutServiceHttpPost">
+    <wsdl:operation name="CreateHtml">
+      <wsdl:input message="tns:CreateHtmlHttpPostIn" />
+      <wsdl:output message="tns:CreateHtmlHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyHtmlFile">
+      <wsdl:input message="tns:ModifyHtmlFileHttpPostIn" />
+      <wsdl:output message="tns:ModifyHtmlFileHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CarveOutServiceSoap" type="tns:CarveOutServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateHtml">
+      <soap:operation soapAction="http://tempuri.org/CreateHtml" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyHtmlFile">
+      <soap:operation soapAction="http://tempuri.org/ModifyHtmlFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CarveOutServiceSoap12" type="tns:CarveOutServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateHtml">
+      <soap12:operation soapAction="http://tempuri.org/CreateHtml" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyHtmlFile">
+      <soap12:operation soapAction="http://tempuri.org/ModifyHtmlFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CarveOutServiceHttpGet" type="tns:CarveOutServiceHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="CreateHtml">
+      <http:operation location="/CreateHtml" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyHtmlFile">
+      <http:operation location="/ModifyHtmlFile" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CarveOutServiceHttpPost" type="tns:CarveOutServiceHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="CreateHtml">
+      <http:operation location="/CreateHtml" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyHtmlFile">
+      <http:operation location="/ModifyHtmlFile" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CarveOutService">
+    <wsdl:port name="CarveOutServiceSoap" binding="tns:CarveOutServiceSoap">
+      <soap:address location="http://cr.topfo.com/WebService/CarveOutService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CarveOutServiceSoap12" binding="tns:CarveOutServiceSoap12">
+      <soap12:address location="http://cr.topfo.com/WebService/CarveOutService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CarveOutServiceHttpGet" binding="tns:CarveOutServiceHttpGet">
+      <http:address location="http://cr.topfo.com/WebService/CarveOutService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CarveOutServiceHttpPost" binding="tns:CarveOutServiceHttpPost">
+      <http:address location="http://cr.topfo.com/WebService/CarveOutService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

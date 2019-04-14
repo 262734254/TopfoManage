@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>文本框输入提示/自动完成功能</title>
+    <meta http-equiv="content-type" content="text/html;charset=gb2312">
+
+    <script type="text/javascript" src="code1.js">
+
+    </script>
+
+</head>
+<body>
+    友情提示：文本框屏蔽了回车，因此回车键暂不可用。
+    <form name="salefrm" method="post" action="?action=add">
+        <input type="text" id="abc" value="J" size="40" />
+        <input type="text" id="we" value="河" size="60" />
+    </form>
+
+    <script type="text/javascript">
+//建立实例，第一个参数是实例对象的名称，第二个是最多显示的数量
+var oo=new mSift('oo',20);
+//数据
+oo.Data=['JavaScript特效','JS效果','Js代码','Java特效','Javascript代码','JS脚本','Js是什么意思','Java','Java游戏'];
+//指定文本框对象建立特效
+oo.Create(document.getElementById('abc'));
+var oxo=new mSift('oxo',20);
+oxo.Data=['河北省','河南省','河源市','河套平原','河北承德'];
+oxo.Create(document.getElementById('we'));
+    </script>
+<!-- <script type="text/javascript" language="javascript">
+                var oo=new mSift('oo',8);
+                oo.Data=[<%=strs %>];
+                oo.Create(document.getElementById('<%=txtIndex.ClientID %>'));
+            </script>-->
+</body>
+</html>

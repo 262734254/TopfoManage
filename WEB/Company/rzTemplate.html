@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+ <title>$Title$</title>
+ <meta name="Description" content="$Description$" />
+ <meta name="KeyWords" content="$KeyWords$" />
+<script src="http://www.topfo.com/js/jquery.js" type="text/javascript"></script>
+<link href="http://www.topfo.com/css/common.css" rel="stylesheet" type="text/css" />
+<link href="http://dp.topfo.com/rzcss/css/rztopto.css" rel="stylesheet" type="text/css" />
+<link href="http://dp.topfo.com/rzcss/css/common.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" href="http://dp.topfo.com/rzcss/css/holiday.css"  />
+    <script src="http://www.topfo.com/js/RzProjectList.js" language="javascript" type="text/javascript"></script>
+    <script src="http://www.topfo.com/js/lxfs.js" language="javascript" type="text/javascript"></script>
+  <script language="javascript" type="text/javascript">
+$(document).ready(function(){
+
+time();
+
+
+// 代码
+});
+
+function addfavorite()
+{
+   if (document.all)
+   {
+      window.external.addFavorite('http://www.topfo.com','中国招商投资网');
+   }
+   else if (window.sidebar)
+   {
+      window.sidebar.addPanel('中国招商投资网', 'http://www.topfo.com', "");
+   }
+} 
+
+function time(){
+
+var cn=document.getElementById("loginNameId").innerHTML;
+getProjectLeft(cn );
+
+ document.getElementById("DivprojectTab").style.display="none";
+}
+
+
+    </script>
+
+
+
+<script src="http://dp.topfo.com/rzcss/js/bootstrap.js"></script>
+<script src="http://dp.topfo.com/rzcss/js/coherent.js"></script>
+<script src="http://dp.topfo.com/rzcss/js/apple.js"></script>
+</head>
+
+<body>
+<!--Head Part-->
+<div class="header">
+       
+       <div class="head_left"><img src="http://dp.topfo.com/rzcss/img/rztopto_1.jpg" width="303" height="115" /></div>
+         <div id="loginNameId" style="display: none;">
+        ##UserNmae##</div>
+  <div class="head_right">
+       
+       <div class="head_right_top"> 
+       <ul>
+         <li class="head_right_top_wza"><a href="http://www.topfo.com" target="_blank" >首页</a> </li>
+         <li class="head_right_top_wzb"><a href="http://dp.topfo.com/help/index.html" target="_blank" >帮助手册</a></li>
+         <li class="head_right_top_wzc"><a href="http://dp.topfo.com/rzLogin.aspx">会员登录</a></li>
+         <li class="head_right_top_wzd"><a  href="http://member.topfo.com/Register/Register.aspx" target="_blank">免费注册</a></li>
+         <li class="head_right_top_wze"><a href="#" onclick="addfavorite()">加入收藏！</a></li>
+         <div style="clear:both"></div>
+       </ul>
+       </div >
+       <div style=" clear:both"></div>
+       <div class="head_right_bottom">
+       <ul>
+   <li><a href="index.htm" class="dssd">首页</a></li>
+             <li><a href="qyjj.htm">企业介绍</a></li>
+             <li><a href="news.htm"  >新闻发布</a></li>
+             <li><a href="xszs.htm">形象展示</a></li>
+             <li><a href="teamrz.htm">项目融资</a></li>
+              <li><a href="rczp.htm">人才招聘</a></li>
+             <li><a href="contentus.htm">联系我们</a></li>
+     </ul>
+       </div>
+      
+  </div>
+    
+	<div class="clear"></div>
+</div>
+
+<div class="zy_banner">
+  <div class="zy_banner_img">
+   <div id="gallery">
+ 
+<div class="media">
+
+<div class="slide slide1 faded_in ipad">
+<a href="#" onClick="s_objectID='MTk3NTc3ODk';"  ><img src="http://dp.topfo.com/rzcss/img/zy_1.jpg" alt="" width="960" height="300" class="hero-slide1" /></a>
+</div>
+            
+
+            <div class="slide slide2 faded_out engrave">
+                      <a href="#" onClick="s_objectID='MjAxNDUxMzA';"  ><img src="http://dp.topfo.com/rzcss/img/zy_2.jpg" alt="" width="960" height="300" class="hero-slide2" /></a>
+
+            </div>
+
+
+            <div class="slide slide3 faded_out giftwrap">
+            
+             
+             <a href="#" onClick="s_objectID='MjA3MDM2MTA';" ><img src="http://dp.topfo.com/rzcss/img/zy_3.jpg" alt="" width="960" height="300" /></a>
+            </div>
+
+
+
+            <div class="slide slide4 faded_out smartcovers">
+          
+
+             <a href="#" onClick="s_objectID='Mjg0Nzk0NDk';"  ><img src="http://dp.topfo.com/rzcss/img/zy_4.jpg" alt="" width="960" height="300" style="top:-4px" /></a>
+
+
+            </div>
+          </div>
+          
+         <div  class="indicator clearfix"></div>
+
+ </div>
+		
+		
+<script>
+         // <![CDATA[
+                    Event.onLoad( function() {
+                                apple.widget.CrossFader.SLIDE_DELAY = 5000;                         
+                                 var gallery = new apple.widget.CrossFader('gallery');
+
+
+                                 // var galleryConfig = {
+                                  //  galleryId: "gallery",
+                                  // };
+                                  // var gallery= new apple.widget.Gallery2(galleryConfig);
+                                });
+                          // ]]>
+</script>
+
+  
+  </div>
+  
+
+  
+  
+</div>
+
+  <div class="rztopto_box">
+      
+      <div class="rztopto_box_left" id="left">
+             <iframe scrolling="no" frameborder="0"  src="http://www.topfo.com/js/leftlx.htm?UserName=##UserNmae##" style="height: 356px">
+            </iframe>
+
+      </div>
+      
+      
+      <div class="rztopto_box_center">
+       <div class="rztopto_box_left_top_img"><img src="http://dp.topfo.com/rzcss/img/rztopto_3.jpg" width="203" height="55" /></div>
+<div class="rztopto_box_left_top_rzxm" id="projectTab">
+    <div id="DivprojectTab" style="display: block; text-align: center;">
+                <img src="http://www.topfo.com/Web13/images/down.gif" alt="Loading" />数据加载中.......
+            </div>                 
+
+               
+        </div>
+      </div>
+      <div class="rztopto_box_right"><div class="rztopto_box_left_top_img"><img src="http://dp.topfo.com/rzcss/img/rztopto_4.jpg" width="203" height="55" /></div>
+        
+        <div  class="rztopto_box_right_wzlb" id="rightTab">
+    
+             <iframe scrolling="no" frameborder="0"  src="http://www.topfo.com/js/rightxx.htm?UserName=##UserNmae##" style="height: 186px"  >
+            </iframe>
+        
+         <!--   <ul>
+               <li><a href="#">·光伏企业持续盈利能力存疑力存疑力存疑力存疑力存疑</a></li>
+               <li><a href="#">·光伏企业持续盈利能力存疑</a></li>
+               <li><a href="#">·光伏企业持续盈利能力存疑</a></li>
+               <li><a href="#">·光伏企业持续盈利能力存疑</a></li>
+               <li><a href="#">·光伏企业持续盈利能力存疑</a></li>
+               
+            </ul>-->
+        <div>  <div class="rztopto_box_left_top_rzxm_lbe"><a href="news.htm"><img src="http://dp.topfo.com/rzcss/img/rztopto_6.jpg" /></a></div>
+      
+               </div>
+      
+      <div style="clear:both"></div>
+
+      </div>
+ 
+</div>     
+        <div style="clear:both"></div></div>
+      <div style=" border-top:1px solid #ff6600; margin-top:5px;"></div>
+      
+      
+<div class="floot">
+	
+<script type="text/javascript" src="http://img2.topfo.com/js/foot.js"></script>
+<div style ="display:none">
+  
+    <script src="http://s16.cnzz.com/stat.php?id=2629166&web_id=2629166&show=pic" language="JavaScript">
+    
+   
+    </script>
+    
+</div>
+
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+﻿/*商机频道*/
+.con {width:960px; padding:0; margin:0 auto; clear:both; overflow:hidden;}
+.con_l {float:left; width:687px; overflow:hidden;}
+.con_r {float:right; width:260px; overflow:hidden;}
+.con_mar {width:100%; height:8px; background:#fff;}
+.con_line {width:960px; height:1px; padding:0; background:url(../img/topfo5_cgal_bgline2.gif) no-repeat; position:relative; top:-1px; margin:0 auto; clear:both; overflow:hidden;}
+.con_nav {width:960px; height:30px; margin:10px auto; overflow:hidden;}
+.con_nav .l {float:left; padding-top:6px;}
+.con_nav .r {float:right; padding:6px 0 0 12px;}
+.con_inp {width:170px; height:16px; background:#fff; border:1px solid #ccc; padding:3px 0 0 2px;}
+.con_btn {width:200px; height:23px; border:none; background:url(../img/topfo5_btn1.gif) 0 420px repeat-y; color:#f60; padding-top:3px; font-size:12px; cursor:pointer; overflow:hidden;}
+.conlist {width:960px; padding:0; margin:0 auto; background:url(../img/topfo5_sj_bg.gif); clear:both; overflow:hidden;}
+.conlist_l {float:left; width:600px; border-top:1px solid #d3d3d3; padding:30px 20px 0 20px; overflow:hidden;}
+.conlist_r {float:right; width:310px; overflow:hidden;}
+.conlist_line {width:960px; height:1px; padding:0; background:url(../img/topfo5_sj_bgbtm.gif) no-repeat; position:relative; top:-1px; margin:0 auto; clear:both; overflow:hidden;}
+.con1_col {height:32px; border:1px solid #d3d3d3; border-bottom:none; background:url(../img/topfo5_bg1.gif) 0 277px; overflow:hidden;}
+.con1_col .l {float:left; background:url(../img/topfo5_icon.gif) 10px 104px repeat-y; padding:11px 0 0 30px;}
+.con1_col .r {float:right; padding:12px 10px 0 0; text-align:right;}
+.con1_sub {width:100%; padding:10px 0; border-bottom:1px solid #d3d3d3;}
+.con1_sub li {width:245px; height:22px; line-height:22px; padding-left:8px; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
+.con1_btm {height:20px; background:#f6f6f6; text-align:right; padding:7px 10px 0 0; margin-bottom:25px;}
+.con2 {width:637px; border-top:1px solid #d3d3d3; padding:30px 25px 0 25px; overflow:hidden;}
+.con2_tit {text-align:center;}
+.con2_col {height:17px; background:url(../img/topfo5_icon.gif) 0 556px; margin:20px auto 10px auto; overflow:hidden;}
+.con2_col .name {float:left; border-right:1px solid #d3d3d3; color:#f60; background:#fff url(../img/topfo5_icon.gif) 0 512px repeat-y; height:16px; padding:2px 15px 0 12px; overflow:hidden;}
+.con2_text {line-height:25px; }
+.con2_contact {color:#f60; background:#F7F7F7 url(../img/topfo5_icon.gif) 10px 594px repeat-y; height:19px; padding:6px 0 0 25px; margin:20px 0 15px 0; overflow:hidden;}
+.con2_tag {background:#F7F7F7; height:19px; padding:6px 0 0 10px; margin:20px 0 15px 0; overflow:hidden;}
+.con2_print {height:20px; background:#f6f6f6; text-align:right; padding:7px 10px 0 0; margin:10px 0 20px 0;}
+.con3 {background:url(../img/topfo5_sj_pic1.gif) no-repeat; padding-left:65px; height:51px; margin-top:15px;}
+.con3_t {border-bottom:1px solid #D9D9D9; padding-bottom:2px; margin-bottom:8px;}
+.con4_tit { padding-left:8px; height:30px;}
+.con4 {width:100%; overflow:hidden;}
+.con4 li {width:100%; height:27px; line-height:27px; overflow:hidden;}
+.con5 {width:308px; border:1px solid #d3d3d3; overflow:hidden;}
+.con5_col {height:30px; background:#FEF7E0; overflow:hidden;}
+.con5_col .l {float:left; background:url(../img/topfo5_icon.gif) 10px 102px repeat-y; padding:9px 0 0 28px; color:#f60;}
+.con5_col .p {float:left; background:url(../img/topfo5_icon.gif) 10px 262px repeat-y; padding:9px 0 0 28px; color:#f60;}
+.con5_col .r {float:right; padding:10px 10px 0 0; text-align:right;}
+.con5_pic {width:100%; height:97px; padding:12px 0 0 12px; overflow:hidden;}
+.con5_pic li {float:left; width:85px; height:90px; text-align:center; margin-right:14px; line-height:18px; overflow:hidden;}
+.con5_pic img {width:85px; height:65px; margin-bottom:8px; display:block;}
+.con5_tit {width:95%; padding:8px 0; margin:0 auto; border-top:1px dashed #d3d3d3; overflow:hidden;}
+.con5_tit li {float:left; width:140px; height:21px; line-height:21px; margin-right:5px; overflow:hidden;}
+.con6_col {height:32px; border:1px solid #d3d3d3; border-bottom:none; background:url(../img/topfo5_bg1.gif) 0 277px; overflow:hidden;}
+.con6_col .l {float:left; background:url(../img/topfo5_icon.gif) 10px 104px repeat-y; padding:11px 0 0 30px;}
+.con6_col .r {float:right; padding:12px 10px 0 0; text-align:right;}
+.con6_sub {width:100%; padding:10px 0;}
+.con6_sub li {width:295px; height:22px; line-height:22px; padding-left:8px; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
+.con7_sub {padding:12px 0 12px 5px; line-height:23px;}
+.con7_sub a {margin-left:12px;}
+.con8_sub {padding:12px 0 12px 4px; line-height:23px;}
+.con8_sub a {margin-left:10px;}
+.con9_btn {width:100%; height:32px; background:url(../img/topfo5_bg1.gif) 0 277px; overflow:hidden;}
+.con9_btn li {float:right; width:60px; height:25px; padding-top:7px; text-align:center; background:url(../img/topfo5_csbg.gif) 0 172px repeat-y; cursor:pointer; overflow:hidden;}
+.con9_btn .tit {float:left; background:url(../img/topfo5_icon.gif) 10px 263px repeat-y; padding:7px 0 0 28px;}
+.con9_btn .on {background:url(../img/topfo5_csbg.gif) 0 204px repeat-y; color:#f60; font-weight:bold;}
+.con10 {border-bottom:1px dashed #d3d3d3; padding-bottom:15px; margin-bottom:15px; height:80px; overflow:hidden;}
+.con10_tit {height:23px; overflow:hidden;}
+.con10_text {line-height:21px; height:45px; overflow:hidden;}
+.con11 {border:1px solid #E8D791; background:#FFFCEC; padding:10px 0 15px 15px; line-height:25px; margin-bottom:20px;}
+.tab1 {border-collapse:collapse; width:100%;}
+.tab1 td {border:1px solid #E8D791; height:29px; padding-left:5px;}
+.tab1 .col {background:#FFFCEC; color:#c60; text-align:right;}
+.tab2 {background:fff; margin:10px 0;}
+.tab2 td {height:30px; background:#F9F9F9;}
+.inp2 {width:80px; height:17px; background:#fff; border:1px solid #C2C2C2; padding:2px 0 0 2px;}
+.btn2 {width:55px; height:23px; border:none; background:url(../img/topfo5_btn1.gif) 0 420px repeat-y; cursor:pointer; font-size:12px; padding-top:3px; overflow:hidden;}
+.con_ad1 {width:310px; background:#fff; overflow:hidden;}
+
+/*分页样式*/
+.page {width:100%; margin:15px auto 35px auto; clear:both; overflow:hidden;}
+.page_sub {float:left;}
+.page_sub a {display:block; border:1px solid #FFD28E; background:#FFFBE8; padding:5px 7px 3px 7px; float:left; margin-right:5px;}
+.page_sub a:link, .page a:visited{color:#333;text-decoration:none;}
+.page_sub a:hover{color:#f00;text-decoration:underline; background:#FFE7C1;}
+.page_sub span {display:block; border:1px solid #FFD28E; background:#ffe7c1; padding:5px 7px 3px 7px; float:left; margin-right:5px;}
+.page_data {float:right; padding-top:6px;}

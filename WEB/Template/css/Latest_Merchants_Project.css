@@ -1,0 +1,125 @@
+@charset "utf-8";
+/* CSS Document */
+
+.con1_sub{width:258px; border:#CCC solid 1px;}
+.con1_col{width:258px;}
+.fuwujigou{width:258px;}
+.con3_pic{  width:637px; height:120px; overflow:hidden; margin:auto 25px; }
+
+/*新闻列表样式*/
+.news
+{
+	width:637px;
+	margin-top:20px;
+	margin-bottom:35px;
+}
+.news ul
+{
+   list-style-type:none;
+   font-family:Arial, Helvetica, sans-serif;
+   font-size:14px;
+   font-weight:bold;
+   text-align:justify;
+   line-height:30px;
+   width:637px;
+}
+.news li
+{
+	font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+	font-weight:normal;
+	color:#333;
+	text-align:justify;
+	line-height:35px;
+	width:637px;
+	list-style-type:none;
+	border-bottom:#CCC dashed 1px;
+}
+
+.news span
+{
+   text-align:left;
+   float:left;
+   display:inline;
+   overflow:hidden;
+   width:470px;
+}
+.news a
+{
+	text-decoration:none;
+	color:#333;
+}
+.news a:hover
+{
+	text-decoration:none;
+	color:#930;
+}
+.news img
+{
+ border:#CCC solid 1px;
+ padding:4px;
+}
+
+
+/*分页样式*/
+.Points_Page {width:96%; margin:15px auto 40px 40px; background:url(../img/topfo5_cgal_bg.gif); clear:both; overflow:hidden;}
+.Points_Page_sub {float:left;}
+.Points_Page_sub a {display:block; border:1px solid #FFD28E; background:#FFFBE8; padding:5px 7px 3px 7px; float:left; margin-right:5px;}
+.Points_Page_sub a:link, .page a:visited{color:#333;text-decoration:none;}
+.Points_Page_sub a:hover{color:#f00;text-decoration:underline; background:#FFE7C1;}
+.Points_Page_sub span {display:block; border:1px solid #FFD28E; background:#ffe7c1; padding:5px 7px 3px 7px; float:left; margin-right:5px;}
+.Points_Page_data {float:left; padding:6px 0 0 10px;}
+
+/*新闻资讯*/
+.zhuyao{background-color:#F0F0F0; border:#ccc solid 1px; height:60px; line-height:30px; text-indent:2em;padding-left:10px; padding-right:10px;
+font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#666;}
+.xinwentupian{text-align:center; margin:20px auto; border:#CCC solid 1px; padding:5px;}
+.xwdb{text-align:right; font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#F90;}
+.biaoshi span{text-decoration:none; font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#ff0000; margin-right:20px;}
+.News-center-right{width:100%}
+.News-center-right-bottom ul
+{
+   list-style-type:none;
+   font-family:Arial, Helvetica, sans-serif;
+   font-size:14px;
+   font-weight:bold;
+   text-align:justify;
+   line-height:40px;
+   width:100%
+}
+.News-center-right-bottom li
+{
+	font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+	font-weight:normal;
+	color:#333;
+	text-align:justify;
+	line-height:30px;
+	width:100%
+	list-style-type:none;
+	border-bottom:#CCC dashed 1px;
+}
+
+.News-center-right-bottom span
+{
+   text-align:left;
+   float:left;
+   display:inline;
+   overflow:hidden;
+   width:88%;
+}
+.News-center-right-bottom a
+{
+	text-decoration:none;
+	color:#333;
+}
+.News-center-right-bottom a:hover
+{
+	text-decoration:none;
+	color:#930;
+}
+.News-center-right-bottom img
+{
+ border:#CCC solid 1px;
+ padding:4px;
+}

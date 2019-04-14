@@ -1,0 +1,53 @@
+body
+{
+	font-size:12px;
+}
+
+table
+{
+	font-size:12px;
+}
+
+tr
+{
+	font-size:12px;
+}
+
+td
+{
+	font-size:12px;
+}
+.12 {
+	font-size: 12px;
+	line-height: 150%;
+	color: #000000;
+	TEXT-DECORATION: none;
+}
+.12g {
+	font-size: 12px;
+	line-height: 150%;
+	color: #565555;
+	TEXT-DECORATION: none;
+}
+.12r{
+	font-size: 12px;
+	line-height: 150%;
+	color: #ff0000;
+	TEXT-DECORATION: none;
+}
+.12w {
+	font-size: 12px;
+	line-height: 200%;
+	color: #ffffff;
+}
+.12b {
+	font-size: 12px;
+	line-height: 150%;
+	color: #006699;
+	TEXT-DECORATION: none;
+}
+.18 {
+	font-family: "ºÚÌå";
+	font-size: 18px;
+	line-height: 200%;
+}

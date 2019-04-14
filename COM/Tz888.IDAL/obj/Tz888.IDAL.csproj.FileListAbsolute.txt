@@ -1,0 +1,21 @@
+C:\Documents and Settings\Administrator\桌面\备份文件\TopfoManage\COM\Tz888.IDAL\bin\Debug\Tz888.IDAL.dll
+C:\Documents and Settings\Administrator\桌面\备份文件\TopfoManage\COM\Tz888.IDAL\bin\Debug\Tz888.IDAL.pdb
+C:\Documents and Settings\Administrator\桌面\备份文件\TopfoManage\COM\Tz888.IDAL\bin\Debug\Tz888.Model.dll
+C:\Documents and Settings\Administrator\桌面\备份文件\TopfoManage\COM\Tz888.IDAL\bin\Debug\Tz888.Model.pdb
+C:\Documents and Settings\Administrator\桌面\备份文件\TopfoManage\COM\Tz888.IDAL\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\备份文件\TopfoManage\COM\Tz888.IDAL\obj\Debug\Tz888.IDAL.dll
+C:\Documents and Settings\Administrator\桌面\备份文件\TopfoManage\COM\Tz888.IDAL\obj\Debug\Tz888.IDAL.pdb
+E:\MyWork\TopfoManage\COM\Tz888.IDAL\bin\Release\Tz888.IDAL.dll
+E:\MyWork\TopfoManage\COM\Tz888.IDAL\bin\Release\Tz888.IDAL.pdb
+E:\MyWork\TopfoManage\COM\Tz888.IDAL\bin\Release\Tz888.Model.dll
+E:\MyWork\TopfoManage\COM\Tz888.IDAL\bin\Release\Tz888.Model.pdb
+E:\MyWork\TopfoManage\COM\Tz888.IDAL\obj\Release\ResolveAssemblyReference.cache
+E:\MyWork\TopfoManage\COM\Tz888.IDAL\obj\Release\Tz888.IDAL.dll
+E:\MyWork\TopfoManage\COM\Tz888.IDAL\obj\Release\Tz888.IDAL.pdb
+E:\MyWork\TopfoManage\COM\Tz888.IDAL\bin\Debug\Tz888.IDAL.dll
+E:\MyWork\TopfoManage\COM\Tz888.IDAL\bin\Debug\Tz888.IDAL.pdb
+E:\MyWork\TopfoManage\COM\Tz888.IDAL\bin\Debug\Tz888.Model.dll
+E:\MyWork\TopfoManage\COM\Tz888.IDAL\bin\Debug\Tz888.Model.pdb
+E:\MyWork\TopfoManage\COM\Tz888.IDAL\obj\Debug\ResolveAssemblyReference.cache
+E:\MyWork\TopfoManage\COM\Tz888.IDAL\obj\Debug\Tz888.IDAL.dll
+E:\MyWork\TopfoManage\COM\Tz888.IDAL\obj\Debug\Tz888.IDAL.pdb

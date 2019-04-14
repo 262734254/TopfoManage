@@ -1,0 +1,102 @@
+﻿/*Common CSS Document */
+body {padding:0; margin:0; font-size:12px; background:#fff; color:#333;}
+* {padding:0; margin:0; }
+ul {padding:0; margin:0;}
+li {list-style:none; line-height:150%}
+img {border:0;line-height:0;}
+span {padding:0; margin:0;}
+form {padding:0; margin:0;}
+input {margin:0; padding:0; font-size:12px; vertical-align:middle; color:#333;}
+select {font-size:12px; vertical-align:middle; color:#333;}
+h1, h2, h3 {padding:0; margin:0; font-family:Microsoft Yahei, simhei; font-weight: normal; color:#f60;}
+hr {border:1px dashed #ccc;}
+textarea { border:1px solid #C2C2C2; padding-left:2px; color:#333; font-size:12px;}
+
+/*css-hack*/
+.clear {clear:both; font-size:1px; visibility:hidden; width:1px; line-height:0;}
+
+/*字体链接样式*/
+a:link,a:visited {color:#333;text-decoration:none;}
+a:hover {color: #f00;text-decoration:underline;}
+.strong {font-weight:bolder;}
+.mar_top1 {margin-top:10px;}
+.mar_top2 {margin-top:20px;}
+.float_l {float:left;}
+.float_r {float:right;}
+.f_14 {font-size:14px;}
+.f_16 {font-size:16px;}
+.f_18 {font-size:18px;}
+.f_20 {font-size:20px;}
+.f_22 {font-size:22px;}
+.f_yahei {font-family:Microsoft Yahei,simhei;}
+.f_gray {color:#999;}
+.f_gray a:link, .f_gray a:visited{color:#999;text-decoration:none;}
+.f_gray a:hover{color:#f00;text-decoration:underline;}
+.f_gray2 {color:#666;}
+.f_black {color:#000;}
+.f_black a:link, .f_black a:visited{color:#000;text-decoration:none;}
+.f_black a:hover{color:#f00;text-decoration:none;}
+.f_org {color:#f60;}
+.f_org a:link, .f_org a:visited{color:#f60;text-decoration:none;}
+.f_org a:hover{color:#f00;text-decoration:underline;}
+.f_red {color:#f00;}
+.f_red a:link, .f_red a:visited{color:#f00;text-decoration:none;}
+.f_red a:hover{color:#f00;text-decoration:underline;}
+.f_line a:link, .f_line a:visited{text-decoration:underline;}
+.f_line a:hover{color:#f00; text-decoration:none;}
+
+/*首尾文件样式 */
+.head {width:960px; height:85px; margin:0 auto; overflow:hidden;}
+.head_l {float:left; width:210px; padding-top:15px; overflow:hidden;}
+.head_r {float:right; width:735px; height:75px; background:url(http://www.topfo.com/V4/img/head_r_bg.gif) repeat-x; padding:10px 0 0 0; overflow:hidden;}
+.head_r_l {float:left; padding-left:18px;}
+.head_r_r {float:right; text-align:right; padding-top:3px;}
+.head_menu {margin-top:20px; padding-left:4px;}
+.head_menu a {background:url(http://www.topfo.com/V4/img/head_menu_line.gif) right 0px no-repeat; padding:0 14px; display:inline; float:left;}
+.head_menu .last {background:none;}
+.head_ad {width:944px; height:80px; padding:7px; margin:10px auto 0 auto; border:1px solid #d3d3d3; overflow:hidden;}
+.head_ad_l {width:130px; height:80px; overflow:hidden; float:left;}
+.head_ad_m {width:664px; height:80px; margin-left:10px; overflow:hidden; float:left;}
+.head_ad_r {width:130px; height:80px; overflow:hidden; float:right;}
+.head_cha {width:960px; height:30px; margin:12px auto 0 auto; overflow:hidden;}
+.head_cha_l {float:left; padding-left:15px; border-right:#CCC solid 1px; padding-right:25px;}
+.head_cha_m {float:left; padding:9px 0 0 10px;}
+.head_cha_r {float:right; width:500px; height:20px; line-height:20px; padding-top:6px; text-align:right; overflow:hidden;}
+.head_nav {width:960px; height:42px; margin:0 auto; background:url(http://www.topfo.com/V4/img/topfo5_combg.gif) 0 42px; overflow:hidden;}
+.head_nav_l {float:left; width:915px; height:42px; background:url(http://www.topfo.com/V4/img/topfo5_combg.gif) 0 84px repeat-y; overflow:hidden; padding-left:30px;}
+.head_nav_l a {float:left; display:block; background:url(http://www.topfo.com/V4/img/topfo5_combg.gif) right 168px repeat-y; padding:16px 13px;}
+.head_nav_l .on1 {height:42px; background:url(http://www.topfo.com/V4/img/topfo5_combg_on.gif) 0 0 no-repeat; padding:0; position:relative; left:-2px;}
+.head_nav_l .on2 {float:left; height:26px; display:block; background:url(http://www.topfo.com/V4/img/topfo5_combg.gif) right 210px repeat-y; padding:16px 14px; color:#f60; overflow:hidden;}
+.head_nav_r {float:right; width:10px; height:42px; background:url(http://www.topfo.com/V4/img/topfo5_combg.gif) right 126px repeat-y;}
+
+/*简单版首文件样式 */
+.head2 {width:960px; height:80px; margin:0 auto; overflow:hidden;}
+.head2_l {float:left; width:210px; padding-top:10px; overflow:hidden;}
+.head2_r {float:right; width:735px; height:75px; overflow:hidden;}
+.head2_t {width:100%; height:36px; background:url(http://www.topfo.com/V4/img/topfo5_combg3.jpg) 0 36px; padding:10px 0 0 0; overflow:hidden;}
+.head2_r_l {float:left; padding:3px 0 0 20px; background:url(http://www.topfo.com/V4/img/topfo5_icon.gif) 10px 632px repeat-y; }
+.head2_r_r {float:right; text-align:right; padding-top:3px;}
+.head2_menu {margin-top:10px; padding-left:4px;}
+.head2_menu a {background:url(http://www.topfo.com/V4/img/head_menu_line.gif) right 0px no-repeat; padding:0 14px; display:inline; float:left;}
+.head2_menu .last {background:none;}
+
+/*搜索样式 */
+.search {width:960px; height:35px; margin:10px auto 0 auto; clear:both; overflow:hidden; border-bottom:#CCC solid 1px; margin-bottom:15px; padding-bottom:10px;}
+
+/*按钮输入框样式 */
+.inp1 {width:60px; height:16px; background:#fff; border:1px solid #ccc; padding:1px 0 0 2px;}
+.sel1 {color:#999; border:1px solid #ccc;}
+.btn1 {width:45px; height:19px; background:url(http://www.topfo.com/V4/img/head_btn.gif); border:none; color:#999; padding-top:2px; cursor:pointer;}
+
+/*底部文件样式 */
+.link {width:928px; border:1px solid #d3d3d3; border-top:none; margin:0 auto; padding:10px 15px; line-height:23px; clear:both; overflow:hidden;}
+.link a {margin-right:12px;}
+.link_col {width:960px; height:3px; background:url(http://www.topfo.com/V4/img/topfo5_linkbg.gif) no-repeat; margin:10px auto 0 auto; clear:both; overflow:hidden;}
+.link_col_l {float:left; height:16px; background:url(http://www.topfo.com/V4/img/topfo5_link_l.gif) no-repeat; margin-left:20px; color:#fff; padding:3px 15px 0 18px; overflow:hidden;}
+.link_col_r {float:left; width:3px; height:19px; background:url(http://www.topfo.com/V4/img/topfo5_link_r.gif) no-repeat; overflow:hidden;}
+.floot {width:960px; margin:30px auto 0 auto; clear:both; overflow:hidden;}
+.public {height:20px; border-bottom:1px solid #ccc; text-align:center;}
+.copy {height:100px; text-align:center; line-height:21px; padding-top:10px;}
+
+/*广告样式 */
+.ad_all {width:960px; height:90px; margin:9px auto 10px auto; overflow:hidden;}
